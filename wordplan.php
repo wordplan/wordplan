@@ -10,11 +10,11 @@
  * Domain Path: /assets/languages
  * Copyright: WordPlan team © 2023
  * Author: WordPlan team
- * Author URI: https://github.com/wordplan
+ * Author URI: https://wordplan.ru
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  *
- * @package Wordplan
+ * @package WordPress\Plugins
  **/
 namespace
 {
@@ -32,13 +32,13 @@ namespace
 		include_once __DIR__ . '/vendor/autoload.php';
 
 		/**
-		 * Main instance of WordPlan
+		 * For external use
 		 *
-		 * @return Wordplan\Core
+		 * @return Wordplan\Core Main instance of core
 		 */
 		function wordplan(): Wordplan\Core
 		{
-			return Wordplan\Core::instance();
+			return Wordplan\Core();
 		}
 	}
 }
@@ -48,6 +48,16 @@ namespace
  */
 namespace Wordplan
 {
+	/**
+	 * For internal use
+	 *
+	 * @return Core Main instance of plugin core
+	 */
+	function core(): Core
+	{
+		return Core::instance();
+	}
+
 	$loader = new \Digiom\Woplucore\Loader();
 
 	try
@@ -66,5 +76,7 @@ namespace Wordplan
 		return false;
 	}
 
-    wordplan()->register(new Context(), $loader);
+	$context = new Context(__FILE__, 'wordplan', $loader);
+
+	core()->register($context);
 }
