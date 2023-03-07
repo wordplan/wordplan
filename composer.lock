@@ -1,9 +1,14 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "527ecc261f9b50a27d43070ed5b8b14c",
     "packages": [
         {
             "name": "digiom/psr7wp",
             "version": "dev-main",
-            "version_normalized": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digiom/psr7wp.git",
@@ -18,10 +23,8 @@
             "require": {
                 "php": ">=7.0"
             },
-            "time": "2022-11-18T13:32:24+00:00",
             "default-branch": true,
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "Digiom\\Psr7wp\\": "src/"
@@ -43,12 +46,11 @@
             "support": {
                 "source": "https://github.com/digiom/psr7wp/tree/main"
             },
-            "install-path": "../digiom/psr7wp"
+            "time": "2022-11-18T13:32:24+00:00"
         },
         {
             "name": "digiom/woplucore",
             "version": "dev-main",
-            "version_normalized": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digiom/woplucore.git",
@@ -65,10 +67,8 @@
                 "ext-mbstring": "*",
                 "php": ">=7.0"
             },
-            "time": "2023-03-07T17:17:32+00:00",
             "default-branch": true,
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "Digiom\\Woplucore\\": "src/"
@@ -90,12 +90,11 @@
             "support": {
                 "source": "https://github.com/digiom/woplucore/tree/main"
             },
-            "install-path": "../digiom/woplucore"
+            "time": "2023-03-07T17:17:32+00:00"
         },
         {
             "name": "digiom/wotices",
             "version": "1.1.0",
-            "version_normalized": "1.1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digiom/wotices.git",
@@ -110,9 +109,7 @@
             "require": {
                 "php": ">=7.0"
             },
-            "time": "2023-02-10T18:25:38+00:00",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "Digiom\\Wotices\\": "src/"
@@ -134,12 +131,11 @@
             "support": {
                 "source": "https://github.com/digiom/wotices/tree/1.1.0"
             },
-            "install-path": "../digiom/wotices"
+            "time": "2023-02-10T18:25:38+00:00"
         },
         {
             "name": "monolog/monolog",
             "version": "1.27.1",
-            "version_normalized": "1.27.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
@@ -183,9 +179,7 @@
                 "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
                 "sentry/sentry": "Allow sending log messages to a Sentry server"
             },
-            "time": "2022-06-09T08:53:42+00:00",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "Monolog\\": "src/Monolog"
@@ -223,12 +217,11 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../monolog/monolog"
+            "time": "2022-06-09T08:53:42+00:00"
         },
         {
             "name": "psr/http-message",
             "version": "1.0.1",
-            "version_normalized": "1.0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
@@ -243,14 +236,12 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2016-08-06T14:39:51+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.0.x-dev"
                 }
             },
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "Psr\\Http\\Message\\": "src/"
@@ -279,12 +270,11 @@
             "support": {
                 "source": "https://github.com/php-fig/http-message/tree/master"
             },
-            "install-path": "../psr/http-message"
+            "time": "2016-08-06T14:39:51+00:00"
         },
         {
             "name": "psr/log",
             "version": "1.1.4",
-            "version_normalized": "1.1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
@@ -299,14 +289,12 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2021-05-03T11:20:27+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.1.x-dev"
                 }
             },
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "Psr\\Log\\": "Psr/Log/"
@@ -332,9 +320,21 @@
             "support": {
                 "source": "https://github.com/php-fig/log/tree/1.1.4"
             },
-            "install-path": "../psr/log"
+            "time": "2021-05-03T11:20:27+00:00"
         }
     ],
-    "dev": true,
-    "dev-package-names": []
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "digiom/woplucore": 20,
+        "digiom/psr7wp": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }

@@ -4,7 +4,7 @@
   "type": "project",
   "minimum-stability": "stable",
   "license": "GPL-3.0-or-later",
-  "homepage": "https://github.com/wordplan",
+  "homepage": "https://wordplan.ru",
   "autoload": {
     "psr-4": {"Wordplan\\": "src/"}
   },

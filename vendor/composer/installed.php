@@ -3,7 +3,7 @@
         'name' => 'wordplan/wordplan',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'e75f2f1f6459de6c69c3d3900e540b21828aa5f8',
+        'reference' => '02005572ef20e8c1e0affbb132b59c15424d9c05',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -24,7 +24,7 @@
         'digiom/woplucore' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '6d1de2ed35b4d313bb505dcab9a898df8627bad2',
+            'reference' => '7acaacffbeb57a79a1e1543128332a5f38d39162',
             'type' => 'library',
             'install_path' => __DIR__ . '/../digiom/woplucore',
             'aliases' => array(
@@ -77,7 +77,7 @@
         'wordplan/wordplan' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'e75f2f1f6459de6c69c3d3900e540b21828aa5f8',
+            'reference' => '02005572ef20e8c1e0affbb132b59c15424d9c05',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
