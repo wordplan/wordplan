@@ -7,7 +7,7 @@ Requires PHP: 7.0
 Stable tag: 0.3.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Donate link: https://wsklad.ru/market
+Donate link: https://wordplan.ru/market
 
 Integration of WordPress and Megaplan (CRM)
 
