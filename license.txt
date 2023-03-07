@@ -1,6 +1,6 @@
 WordPlan > integration of WordPress and Megaplan.
 
-Copyright © 2023 by WordPlan team
+Copyright © 2023 by WordPlan team (https://wordplan.ru)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
