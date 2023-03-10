@@ -3,7 +3,7 @@
         'name' => 'wordplan/wordplan',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'fa25f834727e1502931ebfd53aba340c2ddd8396',
+        'reference' => 'b67f82f2bb0ad548331a0a9b0e29fd08d3b71630',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -16,6 +16,17 @@
             'reference' => '04d69b6ea7d0bc20a261ebf76b329114725cb7f2',
             'type' => 'library',
             'install_path' => __DIR__ . '/../digiom/psr7wp',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+        'digiom/woap' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'aba571d31aa40c41fb18a36f77b2cfa8f86f3b60',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../digiom/woap',
             'aliases' => array(
                 0 => '9999999-dev',
             ),
@@ -77,7 +88,7 @@
         'wordplan/wordplan' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'fa25f834727e1502931ebfd53aba340c2ddd8396',
+            'reference' => 'b67f82f2bb0ad548331a0a9b0e29fd08d3b71630',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

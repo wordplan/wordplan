@@ -8,7 +8,7 @@ use Psr\Http\Message\ResponseInterface;
 /**
  * Interface ClientInterface
  *
- * @package Wsklad\MoySklad\Http
+ * @package Wordplan\MoySklad\Http
  */
 interface ClientInterface
 {
