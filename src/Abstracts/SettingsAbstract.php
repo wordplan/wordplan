@@ -1,4 +1,4 @@
-<?php namespace Wordplan\Settings\Abstracts;
+<?php namespace Wordplan\Abstracts;
 
 defined('ABSPATH') || exit;
 

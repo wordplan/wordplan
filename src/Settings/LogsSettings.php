@@ -2,7 +2,7 @@
 
 defined('ABSPATH') || exit;
 
-use Wordplan\Settings\Abstracts\SettingsAbstract;
+use Wordplan\Abstracts\SettingsAbstract;
 
 /**
  * LogsSettings
