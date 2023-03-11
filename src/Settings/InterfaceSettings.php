@@ -7,7 +7,7 @@ use Wordplan\Abstracts\SettingsAbstract;
 /**
  * InterfaceSettings
  *
- * @package Wsklad\Settings
+ * @package Wordplan\Settings
  */
 class InterfaceSettings extends SettingsAbstract
 {
