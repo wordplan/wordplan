@@ -29,7 +29,15 @@ namespace
 	{
 		define('WORDPLAN_PLUGIN_FILE', __FILE__);
 
-		include_once __DIR__ . '/vendor/autoload.php';
+		$autoloader = __DIR__ . '/vendor/autoload.php';
+
+		if(!is_readable($autoloader))
+		{
+			trigger_error('File is not found: ' . $autoloader);
+			return false;
+		}
+
+		require_once $autoloader;
 
 		/**
 		 * For external use
