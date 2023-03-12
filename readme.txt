@@ -4,7 +4,7 @@ Tags: мегаплан, megaplan, woocommerce, woo, woo sklad, woo commerce
 Requires at least: 5.2
 Tested up to: 6.1
 Requires PHP: 7.0
-Stable tag: 0.3.0
+Stable tag: 0.1.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Donate link: https://wordplan.ru/market
