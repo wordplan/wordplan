@@ -203,7 +203,7 @@ class MainUpdate
 		[
 			'title' => __('API Token', 'wordplan'),
 			'type' => 'text',
-			'description' => __('Текущий токен для доступа. Имеет срок годности. Для принудительного обновления необходимо ввести логин и пароль.', 'wordplan'),
+			'description' => __('The current access token. Has an expiration date. To force the update, you must enter a username and password.', 'wordplan'),
 			'default' => '',
 			'css' => 'width: 100%;',
 		];
