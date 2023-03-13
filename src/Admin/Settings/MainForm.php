@@ -30,7 +30,7 @@ class MainForm extends Form
 	}
 
 	/**
-	 * Add fields for MoySklad
+	 * Add fields for Megaplan
 	 *
 	 * @param $fields
 	 *
