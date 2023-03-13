@@ -92,7 +92,7 @@ class Dashboard
 			if(is_callable($callback, false, $callback_name))
 			{
 				$callback_obj = $callback_name();
-				$callback_obj->setAccount($this->getConn());
+				$callback_obj->setConn($this->getConn());
 				$callback_obj->process();
 			}
 		}
