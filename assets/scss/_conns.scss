@@ -43,14 +43,14 @@
 
 table.conns
 {
-  .column-connection_type .account-name
+  .column-conn_type .conn-name
   {
     font-size: 15px!important;
     line-height: 120%;
     font-weight: 500;
   }
 
-  .column-connection_type .account-metas
+  .column-conn_type .conn-metas
   {
     border: 1px solid #ccd0d4;
     padding: 5px;
@@ -59,7 +59,7 @@ table.conns
     margin-top: 10px;
   }
 
-  .column-account_id
+  .column-conn_id
   {
     width: 75px;
     border-right: 1px solid #ccd0d4;
