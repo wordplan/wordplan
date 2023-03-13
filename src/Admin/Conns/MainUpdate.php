@@ -187,7 +187,6 @@ class MainUpdate
 			'default' => '',
 			'css' => 'min-width: 350px;',
 			'class' => 'disabled',
-			'disabled' => true
 		];
 
 		$fields['password'] =
