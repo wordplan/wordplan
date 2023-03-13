@@ -1,0 +1,29 @@
+{
+  "name": "wordplan/wordplan",
+  "description": "Integration of WordPress and Megaplan",
+  "type": "project",
+  "minimum-stability": "stable",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://wordplan.ru",
+  "autoload": {
+    "psr-4": {"Wordplan\\": "src/"}
+  },
+  "authors": [
+    {
+      "name": "Frescoref",
+      "email": "frescoref@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "digiom/woplucore": "dev-main",
+    "digiom/wotices": "1.*",
+    "digiom/api-megaplan": "dev-main",
+    "digiom/psr7wp": "dev-main",
+    "digiom/woap": "dev-main",
+    "psr/log": "1.*",
+    "psr/http-message": "1.*",
+    "monolog/monolog": "1.*"
+  }
+}

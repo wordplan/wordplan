@@ -1,0 +1,1699 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: WORDPLAN\n"
+"POT-Creation-Date: 2023-03-14 00:28+0300\n"
+"PO-Revision-Date: 2023-03-11 02:50+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wordplan.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: src/Activation.php:24
+msgid ""
+"WordPlan successfully activated. You have made the right choice to integrate "
+"the site with Megaplan (plugin number one)!"
+msgstr ""
+
+#: src/Activation.php:28
+msgid ""
+"The basic plugin setup has not been done yet, so you can proceed to the "
+"setup, which takes no more than 5 minutes."
+msgstr ""
+
+#: src/Activation.php:30
+msgid "Go to setting."
+msgstr ""
+
+#: src/Admin.php:94 src/Admin.php:95 views/add/header.php:4
+#: views/extensions/header.php:4 views/header.php:4 views/settings/header.php:4
+#: views/tools/header.php:5 views/wizards/header.php:5
+msgid "Megaplan"
+msgstr ""
+
+#: src/Admin.php:111 src/Admin.php:112 views/add/header.php:6
+#: views/conns/empty.php:23
+msgid "Add conns"
+msgstr ""
+
+#: src/Admin.php:121 src/Admin.php:122 src/Admin/Settings/LogsForm.php:91
+#: views/tools/header.php:7
+msgid "Tools"
+msgstr ""
+
+#: src/Admin.php:131 src/Admin.php:132 src/Admin/Conns/Dashboard.php:35
+#: views/settings/header.php:6
+msgid "Settings"
+msgstr ""
+
+#: src/Admin.php:141 src/Admin.php:142 views/extensions/header.php:6
+#: views/helps/features.php:34
+msgid "Extensions"
+msgstr ""
+
+#: src/Admin.php:159 src/Admin/Settings/LogsForm.php:74
+#: src/Admin/Settings/MainForm.php:89
+msgid "Conns"
+msgstr ""
+
+#: src/Admin.php:272 src/Admin/Conns/AllTable.php:175
+#: views/conns/dashboard.php:6 views/conns/sections_single.php:6
+msgid "Dashboard"
+msgstr ""
+
+#: src/Admin/Add.php:53
+msgid "By User"
+msgstr ""
+
+#: src/Admin/Add.php:60
+msgid "By Application"
+msgstr ""
+
+#: src/Admin/Add/ByApplicationForm.php:39
+msgid "Connect by Application"
+msgstr ""
+
+#: src/Admin/Add/ByApplicationForm.php:44
+msgid "Connection to Megaplan using a token generated on the Megaplan side."
+msgstr ""
+
+#: src/Admin/Add/ByApplicationForm.php:45
+msgid "The token must be for the specified unique application identifier."
+msgstr ""
+
+#: src/Admin/Add/ByApplicationForm.php:51 src/Admin/Conns/MainUpdate.php:142
+msgid "UUID"
+msgstr ""
+
+#: src/Admin/Add/ByApplicationForm.php:53 src/Admin/Conns/MainUpdate.php:144
+msgid "Unique application identifier from Megaplan."
+msgstr ""
+
+#: src/Admin/Add/ByApplicationForm.php:60 src/Admin/Conns/MainUpdate.php:151
+#: src/Admin/Conns/MainUpdate.php:204
+msgid "API Token"
+msgstr ""
+
+#: src/Admin/Add/ByApplicationForm.php:62 src/Admin/Conns/MainUpdate.php:153
+msgid "The token can be generated in Megaplan."
+msgstr ""
+
+#: src/Admin/Add/ByUserForm.php:39
+msgid "Connect by User"
+msgstr ""
+
+#: src/Admin/Add/ByUserForm.php:44
+msgid "Connection to Megaplan by login and password."
+msgstr ""
+
+#: src/Admin/Add/ByUserForm.php:45
+msgid ""
+"Login and password will not be saved. Instead, an access token will be "
+"generated."
+msgstr ""
+
+#: src/Admin/Add/ByUserForm.php:46
+msgid "All further manipulations will be performed using the user token."
+msgstr ""
+
+#: src/Admin/Add/ByUserForm.php:52 src/Admin/Settings/ConnectionForm.php:215
+msgid "Login"
+msgstr ""
+
+#: src/Admin/Add/ByUserForm.php:54
+msgid "This login is used to enter the Megaplan service."
+msgstr ""
+
+#: src/Admin/Add/ByUserForm.php:61
+msgid "Password"
+msgstr ""
+
+#: src/Admin/Add/ByUserForm.php:63
+msgid "Password from the entered login to enter the Megaplan service."
+msgstr ""
+
+#: src/Admin/Add/Form.php:49
+msgid "Name"
+msgstr ""
+
+#: src/Admin/Add/Form.php:51
+msgid "An arbitrary name for the connection. Used for reference purposes."
+msgstr ""
+
+#: src/Admin/Add/Form.php:58
+msgid "Host"
+msgstr ""
+
+#: src/Admin/Add/Form.php:60
+msgid ""
+"Megaplan address. You can copy from the browser line, leaving only the domain "
+"name. Example: mp97470037.megaplan.ru"
+msgstr ""
+
+#: src/Admin/Add/Form.php:89 src/Admin/Settings/ConnectionForm.php:160
+msgid "Connection error. Please retry."
+msgstr ""
+
+#: src/Admin/Add/Form.php:129
+msgid "Create connection error. Name is required."
+msgstr ""
+
+#: src/Admin/Add/Form.php:142
+msgid "Create connection error. Host is required."
+msgstr ""
+
+#: src/Admin/Add/Form.php:163
+msgid "Create connection error. Login is required."
+msgstr ""
+
+#: src/Admin/Add/Form.php:176
+msgid "Create connection error. Password is required."
+msgstr ""
+
+#: src/Admin/Add/Form.php:190
+msgid "Create connection error. APP Token is required."
+msgstr ""
+
+#: src/Admin/Add/Form.php:209
+msgid "Create connection error. Name is exists."
+msgstr ""
+
+#: src/Admin/Add/Form.php:256
+msgid "Create connection success. connection id:"
+msgstr ""
+
+#: src/Admin/Add/Form.php:257
+msgid "edit conn"
+msgstr ""
+
+#: src/Admin/Add/Form.php:269
+msgid "Create connection error. Please retry saving or change fields."
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:115
+msgid "Time"
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:117
+#, php-format
+msgctxt "%s = human-readable time difference"
+msgid "(%s ago)"
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:121
+msgid "No activity"
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:176
+msgid "Verification"
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:177
+msgid "Mark as deleted"
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:183
+msgid "Remove forever"
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:196
+msgid "User: "
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:200 src/Admin/Conns/Dashboard.php:213
+msgid "User is not exists."
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:208
+msgid "Connection type: "
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:252
+msgid "ID"
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:253
+msgid "Base information"
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:254 src/Admin/Conns/Dashboard.php:188
+#: src/Admin/Conns/UpdateForm.php:42 src/Admin/Settings/ActivationForm.php:159
+msgid "Status"
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:255
+msgid "Connection date"
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:256
+msgid "Last activity"
+msgstr ""
+
+#: src/Admin/Conns/AllTable.php:304
+msgid "All"
+msgstr ""
+
+#: src/Admin/Conns/Dashboard.php:39
+msgid ""
+"Updating the parameters of all basic settings, including data for "
+"authorization in Megaplan."
+msgstr ""
+
+#: src/Admin/Conns/Dashboard.php:181
+msgid "About conn"
+msgstr ""
+
+#: src/Admin/Conns/Dashboard.php:192
+msgid "Date active:"
+msgstr ""
+
+#: src/Admin/Conns/Dashboard.php:196 src/Admin/Conns/Dashboard.php:222
+#: src/Admin/Conns/Dashboard.php:231
+#, php-format
+msgctxt "%s = human-readable time difference"
+msgid " (%s ago)."
+msgstr ""
+
+#: src/Admin/Conns/Dashboard.php:201 views/extensions/item.php:20
+msgid "ID:"
+msgstr ""
+
+#: src/Admin/Conns/Dashboard.php:209
+msgid "Owner:"
+msgstr ""
+
+#: src/Admin/Conns/Dashboard.php:218
+msgid "Date create:"
+msgstr ""
+
+#: src/Admin/Conns/Dashboard.php:227
+msgid "Date modify:"
+msgstr ""
+
+#: src/Admin/Conns/Dashboard.php:237
+msgid "Directory:"
+msgstr ""
+
+#: src/Admin/Conns/Dashboard.php:249
+msgid "Directory size:"
+msgstr ""
+
+#: src/Admin/Conns/Dashboard.php:261
+msgid "Logs directory size:"
+msgstr ""
+
+#: src/Admin/Conns/Delete.php:76
+msgid "Error. The conn to be deleted is active and cannot be deleted."
+msgstr ""
+
+#: src/Admin/Conns/Delete.php:129
+msgid "The conn has been marked as deleted."
+msgstr ""
+
+#: src/Admin/Conns/Delete.php:137
+msgid "The conn has been successfully disconnected."
+msgstr ""
+
+#: src/Admin/Conns/Delete.php:144
+msgid "Deleting error. Please retry again."
+msgstr ""
+
+#: src/Admin/Conns/DeleteForm.php:40
+msgid "Delete confirmation"
+msgstr ""
+
+#: src/Admin/Conns/DeleteForm.php:45
+msgid ""
+"I confirm that Conn will be permanently and irrevocably deleted from "
+"WordPress."
+msgstr ""
+
+#: src/Admin/Conns/DeleteForm.php:46
+msgid ""
+"The directory with files for conn from the FILE system will be completely "
+"removed."
+msgstr ""
+
+#: src/Admin/Conns/DeleteForm.php:88
+msgid "Delete error. Please retry."
+msgstr ""
+
+#: src/Admin/Conns/DeleteForm.php:130
+msgid "Delete error. Confirmation of final deletion is required."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:98
+msgid "Conn update success."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:108
+msgid "Conn update error. Please retry saving or change fields."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:130 src/Admin/Conns/MainUpdate.php:172
+msgid "Authorization data"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:135 src/Admin/Conns/MainUpdate.php:177
+msgid "Authorization of requests for current conn."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:136 src/Admin/Conns/MainUpdate.php:178
+msgid "Used for authorization in Megaplan service."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:184
+msgid "Username"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:186
+msgid ""
+"Login in Megaplan. After adding an conn, changing the login is not possible."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:195
+msgid "User password"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:197
+msgid "Password for the specified user Megaplan."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:206
+msgid ""
+"The current access token. Has an expiration date. To force the update, you "
+"must enter a username and password."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:225 src/Admin/Settings.php:61
+msgid "Event logs"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:227
+msgid ""
+"Maintaining event logs for the current conn. You can view the logs through "
+"the extension or via FTP."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:232
+msgid "Level for events"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:234 src/Admin/Settings/LogsForm.php:44
+msgid ""
+"All events of the selected level will be recorded in the log file. The higher "
+"the level, the less data is recorded."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:238 src/Admin/Settings/LogsForm.php:80
+#: src/Admin/Settings/LogsForm.php:97
+msgid "Use level for main events"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:239 src/Admin/Settings/LogsForm.php:48
+#: src/Admin/Settings/LogsForm.php:81 src/Admin/Settings/LogsForm.php:98
+msgid "DEBUG (100)"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:240 src/Admin/Settings/LogsForm.php:49
+#: src/Admin/Settings/LogsForm.php:82 src/Admin/Settings/LogsForm.php:99
+msgid "INFO (200)"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:241 src/Admin/Settings/LogsForm.php:50
+#: src/Admin/Settings/LogsForm.php:83 src/Admin/Settings/LogsForm.php:100
+msgid "NOTICE (250)"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:242 src/Admin/Settings/LogsForm.php:51
+#: src/Admin/Settings/LogsForm.php:84 src/Admin/Settings/LogsForm.php:101
+msgid "WARNING (300)"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:243 src/Admin/Settings/LogsForm.php:52
+#: src/Admin/Settings/LogsForm.php:85 src/Admin/Settings/LogsForm.php:102
+msgid "ERROR (400)"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:249 src/Admin/Settings/LogsForm.php:58
+msgid "Maximum files"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:251 src/Admin/Settings/LogsForm.php:60
+msgid ""
+"Log files created daily. This option on the maximum number of stored files. "
+"By default saved of the logs are for the last 30 days."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:270
+msgid "Other parameters"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:272
+msgid ""
+"Change of data processing behavior for environment compatibility and so on."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:277
+msgid "Maximum size of accepted requests"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:282
+msgid ""
+"Enter the maximum size of accepted requests from Megaplan at a time in bytes. "
+"May be specified with a dimension suffix, such as 7M, where M = megabyte, K = "
+"kilobyte, G - gigabyte."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:283 src/Admin/Conns/MainUpdate.php:299
+msgid "Current WORDPLAN limit:"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:285
+msgid ""
+"Can only decrease the value, because it must not exceed the limits from the "
+"WORDPLAN settings."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:293 src/Admin/Settings/MainForm.php:142
+msgid "Maximum time for execution PHP"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:298
+msgid ""
+"Value is seconds. Algorithms of current configuration will run until a time "
+"limit is end."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:301
+msgid ""
+"If specify 0, the time limit will be disabled. Specifying 0 is not "
+"recommended, it is recommended not to exceed the WORDPLAN limit."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:325
+msgid "Debug is enabled!"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:327
+msgid ""
+"The current conn has debug mode enabled. You must disable this mode after "
+"debugging is complete."
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:336
+msgid "Info is enabled!"
+msgstr ""
+
+#: src/Admin/Conns/MainUpdate.php:338
+msgid ""
+"The extended information recording mode is enabled for the current conn. It "
+"is recommended to disable this mode after debugging is complete."
+msgstr ""
+
+#: src/Admin/Conns/Update.php:35 src/Admin/Settings.php:47
+msgid "Main"
+msgstr ""
+
+#: src/Admin/Conns/Update.php:102
+msgid "Conn name"
+msgstr ""
+
+#: src/Admin/Conns/Update.php:104
+msgid "Used for convenient distribution of multiple conns."
+msgstr ""
+
+#: src/Admin/Conns/Update.php:107
+msgid "Rename"
+msgstr ""
+
+#: src/Admin/Conns/Update.php:136
+msgid "Conn name update success."
+msgstr ""
+
+#: src/Admin/Conns/Update.php:146
+msgid "Conn name update error. Please retry saving or change fields."
+msgstr ""
+
+#: src/Admin/Conns/UpdateForm.php:44
+msgid "Check the box if you want to enable this conn. Disabled by default."
+msgstr ""
+
+#: src/Admin/Conns/UpdateForm.php:49
+msgid ""
+"The conn is either enabled or disabled. In the off state, all conn mechanisms "
+"will not work."
+msgstr ""
+
+#: src/Admin/Conns/UpdateForm.php:89 src/Admin/Forms/InlineForm.php:58
+msgid "Update error. Please retry."
+msgstr ""
+
+#: src/Admin/Conns/UpdateForm.php:135
+msgid "Fast navigation"
+msgstr ""
+
+#: src/Admin/Conns/Verification.php:73
+msgid ""
+"The conn from Megaplan has been deleted. It is not possible to check the "
+"relevance."
+msgstr ""
+
+#: src/Admin/Conns/Verification.php:85
+msgid "The following conns have been successfully verified and connected:"
+msgstr ""
+
+#: src/Admin/Conns/Verification.php:102
+msgid "Verify connection error. Test connection is not success."
+msgstr ""
+
+#: src/Admin/Conns/Verification.php:112
+msgid "The following conns contain errors and have been disabled:"
+msgstr ""
+
+#: src/Admin/Extensions.php:40
+msgid "Installed"
+msgstr ""
+
+#: src/Admin/Helps/Init.php:40
+msgid "Help"
+msgstr ""
+
+#: src/Admin/Helps/Init.php:49 views/helps/bugs.php:3
+msgid "Found a bug?"
+msgstr ""
+
+#: src/Admin/Helps/Init.php:58 views/helps/features.php:3
+msgid "Not a feature?"
+msgstr ""
+
+#: src/Admin/Settings.php:54
+msgid "Activation"
+msgstr ""
+
+#: src/Admin/Settings.php:68
+msgid "Interface"
+msgstr ""
+
+#: src/Admin/Settings.php:75
+msgid "Connection to the WORDPLAN"
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:50 src/Admin/Settings/Form.php:75
+msgid "Save error. Please retry."
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:92
+msgid "The code is invalid. Enter the correct code."
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:126
+msgid "Code activated successfully."
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:168
+msgid "Code for activation"
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:174
+msgid "Enter the code only on the actual workstation."
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:175
+msgid "If enter the correct code, the current environment will be activated."
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:176
+msgid "Current activation API status:"
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:229
+msgid "never"
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:239
+msgid "Code ID"
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:241
+msgid "expires:"
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:243
+msgid "Instance ID"
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:245
+msgid "Domain"
+msgstr ""
+
+#: src/Admin/Settings/ActivationForm.php:299
+msgid "Activate"
+msgstr ""
+
+#: src/Admin/Settings/ConnectionForm.php:106
+#, php-format
+msgid ""
+"The user with the login %s on the site %s successfully connected to the "
+"current site."
+msgstr ""
+
+#: src/Admin/Settings/ConnectionForm.php:128
+#, php-format
+msgid ""
+"Error connecting user with login %s on site %s to the current site. Please "
+"try again later."
+msgstr ""
+
+#: src/Admin/Settings/ConnectionForm.php:182
+msgid "Disconnect successful. Reconnect is available"
+msgstr ""
+
+#: src/Admin/Settings/ConnectionForm.php:208
+msgid "Site is connected to WORDPLAN"
+msgstr ""
+
+#: src/Admin/Settings/ConnectionForm.php:210
+msgid "To create a new connection, need to disconnect the current connection."
+msgstr ""
+
+#: src/Admin/Settings/ConnectionForm.php:217
+msgid "Connected login from the WORDPLAN website."
+msgstr ""
+
+#: src/Admin/Settings/ConnectionForm.php:225
+msgid "Application token"
+msgstr ""
+
+#: src/Admin/Settings/ConnectionForm.php:227
+msgid ""
+"The current application token for the user. This token can be revoked in your "
+"personal conn on the WORDPLAN website, as well as by clicking the Disconnect "
+"button."
+msgstr ""
+
+#: src/Admin/Settings/Form.php:130
+msgid "Save success."
+msgstr ""
+
+#: src/Admin/Settings/InterfaceForm.php:40
+msgid "Changing the interface"
+msgstr ""
+
+#: src/Admin/Settings/InterfaceForm.php:42
+msgid "Allow changes to WordPress dashboard interface?"
+msgstr ""
+
+#: src/Admin/Settings/InterfaceForm.php:46
+msgid ""
+"If enabled, new features will appear in the WordPress interface according to "
+"the interface change settings."
+msgstr ""
+
+#: src/Admin/Settings/InterfaceForm.php:47
+msgid ""
+"If interface modification is enabled, it is possible to change settings for "
+"individual features, users, and roles. If disabled, features will be disabled "
+"globally for everyone and everything."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:42
+msgid "Level for main events"
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:67
+msgid "Levels by context"
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:69
+msgid "Event log settings based on context."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:76
+msgid ""
+"All events of the selected level will be recorded the conns events in the log "
+"file. The higher the level, the less data is recorded."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:93
+msgid ""
+"All events of the selected level will be recorded the tools events in the log "
+"file. The higher the level, the less data is recorded."
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:43
+msgid "API Megaplan"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:45
+msgid "Used for API connections."
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:50
+msgid "Default host"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:52
+msgid "This host is used for API connection. Example: {hostname}.megaplan.ru"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:59
+msgid "Force requests over HTTPS"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:61
+msgid "Enable HTTPS enforcement for requests to the Megaplan API?"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:62
+msgid ""
+"If enabled, all API requests from the site to Megaplan will be made over the "
+"secure HTTPS protocol."
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:68
+msgid "Timeout"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:70
+msgid ""
+"This timeout is used for API connection. If the timeout is unknown, use the "
+"value: 30"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:91
+msgid "Some settings for the conns."
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:96
+msgid "Unique names"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:98
+msgid "Require unique names for conns?"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:99
+msgid "If enabled, will need to provide unique names for the conns."
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:105
+msgid "Number in the list"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:107
+msgid "The number of displayed conns on one page."
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:114
+msgid "Deleting drafts without trash"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:116
+msgid "Enable deleting drafts without placing them in the trash?"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:117
+msgid ""
+"If enabled, conns for connections in the draft status will be deleted without "
+"being added to the basket."
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:135
+msgid "Technical settings"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:137
+msgid "Used to set up the environment."
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:147
+msgid "Value is seconds. wordplan will run until a time limit is set."
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:148
+msgid "Server value:"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:150
+msgid ""
+"If specify 0, the time limit will be disabled. Specifying 0 is not "
+"recommended, it is recommended not to exceed the server limit."
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:158
+msgid "Maximum request size"
+msgstr ""
+
+#: src/Admin/Settings/MainForm.php:160
+msgid ""
+"The setting must not take a size larger than specified in the server settings."
+msgstr ""
+
+#: src/Admin/Wizards/Setup/Database.php:43
+msgid "Create tables error. Please retry."
+msgstr ""
+
+#: src/Admin/Wizards/SetupWizard.php:54
+msgid "Setup wizard"
+msgstr ""
+
+#: src/Admin/Wizards/SetupWizard.php:89
+msgid "Compatibility"
+msgstr ""
+
+#: src/Admin/Wizards/SetupWizard.php:94
+msgid "Database"
+msgstr ""
+
+#: src/Admin/Wizards/SetupWizard.php:99
+msgid "Completing"
+msgstr ""
+
+#: src/Core.php:65
+msgid "Timer not loaded."
+msgstr ""
+
+#: src/Core.php:75
+msgid "Extensions not loaded."
+msgstr ""
+
+#: src/Core.php:84
+msgid "Extensions not initialized."
+msgstr ""
+
+#: src/Core.php:93
+msgid "Tools not loaded."
+msgstr ""
+
+#: src/Core.php:104
+msgid "Tools not initialized."
+msgstr ""
+
+#: src/Core.php:347
+msgid "This activation code is active."
+msgstr ""
+
+#: src/Core.php:348
+msgid "Error: This activation code has expired."
+msgstr ""
+
+#: src/Core.php:349
+msgid "Activation code republished. Awaiting reactivation."
+msgstr ""
+
+#: src/Core.php:350
+msgid "Error: This activation code has been suspended."
+msgstr ""
+
+#: src/Core.php:351
+msgid "This activation code is not found."
+msgstr ""
+
+#: src/Core.php:352
+msgid "This activation code is active (localhost)."
+msgstr ""
+
+#: src/Core.php:353
+msgid "Error: This activation code is pending review."
+msgstr ""
+
+#: src/Core.php:354
+msgid ""
+"Error: This version of the software was released after your download access "
+"expired. Please downgrade software or contact support for more information."
+msgstr ""
+
+#: src/Core.php:355
+msgid "Error: The activation code variable is empty."
+msgstr ""
+
+#: src/Core.php:356
+msgid "Error: I could not obtain a new local code."
+msgstr ""
+
+#: src/Core.php:357
+msgid "Error: The maximum local code delay period has expired."
+msgstr ""
+
+#: src/Core.php:358
+msgid "Error: The local key has been tampered with or is invalid."
+msgstr ""
+
+#: src/Core.php:359
+msgid "Error: The local code is invalid for this location."
+msgstr ""
+
+#: src/Core.php:360
+msgid ""
+"Error: Please create the following file (and directories if they dont exist "
+"already): "
+msgstr ""
+
+#: src/Core.php:361
+msgid "Error: Please make the following path writable: "
+msgstr ""
+
+#: src/Core.php:362
+msgid "Error: I could not determine the local key storage on clear."
+msgstr ""
+
+#: src/Core.php:363
+msgid "Error: I could not save the local key."
+msgstr ""
+
+#: src/Core.php:364
+msgid "Error: The local code is invalid for this activation code."
+msgstr ""
+
+#: src/Core.php:365
+msgid "Error: This activation code has been deleted."
+msgstr ""
+
+#: src/Core.php:366
+msgid "Error: This activation code has draft."
+msgstr ""
+
+#: src/Core.php:367
+msgid "Error: This activation code has available."
+msgstr ""
+
+#: src/Core.php:368
+msgid "Error: This activation code has been blocked."
+msgstr ""
+
+#: src/Core.php:396
+msgid "Localization loaded."
+msgstr ""
+
+#: src/Data/Storages/ConnsStorage.php:59
+msgid "Could not insert into the database"
+msgstr ""
+
+#: src/Extensions/Abstracts/ExtensionAbstract.php:122
+msgid "Meta value by name is not available."
+msgstr ""
+
+#: src/Extensions/Core.php:35
+msgid "Set $extensions is not valid."
+msgstr ""
+
+#: src/Extensions/Core.php:67
+msgid "Extension not found by id."
+msgstr ""
+
+#: src/Extensions/Core.php:72
+msgid "Extension is not implementation ExtensionContract. Skipped init."
+msgstr ""
+
+#: src/Extensions/Core.php:87
+msgid "Init extension exception:"
+msgstr ""
+
+#: src/Extensions/Core.php:128
+msgid "Get extension by id is unavailable."
+msgstr ""
+
+#: src/Extensions/Core.php:155
+msgid "Extensions load exception:"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:52 views/helps/bugs.php:25
+msgid "Environments"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:53
+msgid "Data about all current environments."
+msgstr ""
+
+#: src/Tools/Environments/Init.php:112
+msgid "yes"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:116 src/Traits/DatetimeUtilityTrait.php:114
+#: vendor/digiom/woplucore/src/Traits/DatetimeUtilityTrait.php:118
+msgid "not"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:140
+msgid "WordPress environment"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:154
+msgid "WORDPLAN environment"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:173
+msgid "WooCommerce environment"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:187
+msgid "Server environment"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:213
+msgid "Home URL"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:223
+msgid "Site URL"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:233
+msgid "WordPress version"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:243
+msgid "WordPress multisite"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:253
+msgid "WordPress debug"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:263
+msgid "WordPress cron"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:273
+msgid "WordPress language"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:283
+msgid "WordPress memory limit"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:318
+msgid "Server info"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:328
+msgid "PHP version"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:338
+msgid "Database version"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:348
+msgid "Suhosin"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:358
+msgid "Fsockopen or curl enabled"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:372
+msgid "CURL info"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:383
+msgid "Default timezone"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:393
+msgid "PHP post max size"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:403
+msgid "PHP max upload size"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:413
+msgid "PHP max execution time"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:423
+msgid "PHP max input vars"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:433
+msgid "PHP soapclient enabled"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:443
+msgid "PHP domdocument enabled"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:453
+msgid "PHP gzip enabled"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:463
+msgid "PHP mbstring enabled"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:494
+msgid "WORDPLAN version"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:504
+msgid "Upload directory"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:517
+msgid "Count extensions"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:532
+msgid "Count tools"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:565
+msgid "WooCommerce version"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:582
+msgid "WooCommerce product types"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:592
+msgid "WooCommerce currency"
+msgstr ""
+
+#: src/Tools/Environments/Init.php:602
+msgid "WooCommerce currency symbol"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:41 src/Traits/ConnsUtilityTrait.php:77
+#: src/Traits/ConnsUtilityTrait.php:109
+msgid "Undefined"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:47
+msgid "Draft"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:48
+msgid "Active"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:49
+msgid "Inactive"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:50 views/conns/dashboard_error.php:9
+#: views/conns/update_error.php:9
+msgid "Error"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:51
+msgid "Processing"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:52
+msgid "Deleted"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:83
+msgid "by User"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:84
+msgid "by Application"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:115
+msgid "Drafts"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:116
+msgid "Activated"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:117
+msgid "Deactivated"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:118
+msgid "With errors"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:119
+msgid "In processing"
+msgstr ""
+
+#: src/Traits/ConnsUtilityTrait.php:120
+msgid "Trash"
+msgstr ""
+
+#: src/Traits/DatetimeUtilityTrait.php:121
+#: vendor/digiom/woplucore/src/Traits/DatetimeUtilityTrait.php:125
+#, php-format
+msgid "%s <span class=\"time\">in: %s</span>"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/FormAbstract.php:818
+msgid "Select all"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/FormAbstract.php:818
+msgid "Select none"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:111
+msgid "List View"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:112
+msgid "Excerpt View"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:198
+msgid "No items found."
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:331
+msgid "Select bulk action"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:333
+msgid "Bulk Actions"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:344
+msgid "Apply"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:402
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:1129
+msgid "Show more details"
+msgstr ""
+
+#. translators: %s: Number of items.
+#. translators: Number of items.
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:513
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:1158
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:561
+msgid "First page"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:575
+msgid "Previous page"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:583
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:589
+msgid "Current Page"
+msgstr ""
+
+#. translators: 1: Current page, 2: Total pages.
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:598
+#, php-format
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:612
+msgid "Next page"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:626
+msgid "Last page"
+msgstr ""
+
+#: vendor/digiom/woplucore/src/Abstracts/TableAbstract.php:843
+msgid "Select All"
+msgstr ""
+
+#: vendor/digiom/wotices/src/Types/ErrorNotice.php:39
+#: vendor/digiom/wotices/src/Types/InfoNotice.php:37
+#: vendor/digiom/wotices/src/Types/SuccessNotice.php:39
+#: vendor/digiom/wotices/src/Types/UpdateNotice.php:39
+#: vendor/digiom/wotices/src/Types/WarningNotice.php:39
+msgid "Close"
+msgstr ""
+
+#: views/activation/form.php:31
+msgid "Get code"
+msgstr ""
+
+#: views/activation/form.php:32
+msgid "The code can be obtained from the plugin website."
+msgstr ""
+
+#: views/activation/form.php:34
+msgid "Site:"
+msgstr ""
+
+#: views/add/form.php:25
+msgid ""
+"Enter a name for the new conn, fill all fields and click the add conn button."
+msgstr ""
+
+#: views/add/form.php:29
+msgid "Add conn"
+msgstr ""
+
+#: views/connection/form.php:21
+msgid "Connect by WORDPLAN site"
+msgstr ""
+
+#: views/connection/form.php:24
+msgid "Disconnect"
+msgstr ""
+
+#: views/connection/init.php:5
+msgid "Connection"
+msgstr ""
+
+#: views/connection/init.php:15
+msgid ""
+"To receive support and official services, need to go through the "
+"authorization of external applications."
+msgstr ""
+
+#: views/connection/init.php:16
+msgid ""
+"Authorization of an external app occurs by going to the official WORDPLAN and "
+"returning to the current site."
+msgstr ""
+
+#: views/conns/dashboard_error.php:3 views/conns/update_error.php:3
+msgid "Back to conns list"
+msgstr ""
+
+#: views/conns/dashboard_error.php:11 views/conns/update_error.php:11
+msgid "Update is not available. Conn not found or unavailable."
+msgstr ""
+
+#: views/conns/delete.php:5
+msgid "ID of the conn to be deleted:"
+msgstr ""
+
+#: views/conns/delete.php:9
+msgid "Name of the conn to be deleted:"
+msgstr ""
+
+#: views/conns/delete.php:13
+msgid "Path of the conn directory to be deleted:"
+msgstr ""
+
+#: views/conns/delete_error.php:3
+msgid "Error. Delete is not available"
+msgstr ""
+
+#: views/conns/delete_form.php:16
+msgid "Delete"
+msgstr ""
+
+#: views/conns/empty.php:9
+msgid "Conns by query is not found, query:"
+msgstr ""
+
+#: views/conns/empty.php:13
+msgid "Conns not found."
+msgstr ""
+
+#: views/conns/empty.php:19
+msgid "To continue working, you must add at least one conn from Megaplan."
+msgstr ""
+
+#: views/conns/error.php:3
+msgid "Error. Page for conns not found."
+msgstr ""
+
+#: views/conns/sections.php:16
+msgid "Description is not exists."
+msgstr ""
+
+#: views/conns/update_form.php:16
+msgid "Save conn"
+msgstr ""
+
+#: views/error.php:3
+msgid "Error. Page not found."
+msgstr ""
+
+#: views/extensions/empty.php:4
+msgid "Extensions not found."
+msgstr ""
+
+#: views/extensions/empty.php:5
+msgid ""
+"As soon as the extensions are installed, they will appear in this section."
+msgstr ""
+
+#: views/extensions/empty.php:11
+msgid ""
+"Information about all available official extensions is available on the "
+"website:"
+msgstr ""
+
+#: views/extensions/error.php:3
+msgid "Error. Page for extensions not found."
+msgstr ""
+
+#: views/extensions/item.php:6 views/extensions/item.php:14
+#: views/extensions/item.php:26 views/extensions/item.php:33
+#: views/extensions/item.php:37
+msgid "none"
+msgstr ""
+
+#: views/extensions/item.php:24
+msgid "Version:"
+msgstr ""
+
+#: views/extensions/item.php:30
+msgid "Versions WORDPLAN:"
+msgstr ""
+
+#: views/extensions/item.php:31
+msgid "from"
+msgstr ""
+
+#: views/extensions/item.php:35
+msgid "to"
+msgstr ""
+
+#: views/helps/bugs.php:6
+msgid ""
+"First of all, you need to make sure that a bug has been found and that it has "
+"not been fixed in updates before."
+msgstr ""
+
+#: views/helps/bugs.php:7
+msgid ""
+"If the bug is fixed in the updates, you just need to install the corrected "
+"version."
+msgstr ""
+
+#: views/helps/bugs.php:10
+msgid "Before reporting an error need to check:"
+msgstr ""
+
+#: views/helps/bugs.php:14
+msgid ""
+"Whether the settings for WordPress, WORDPLAN and their extensions are correct."
+msgstr ""
+
+#: views/helps/bugs.php:15
+msgid ""
+"Whether compatible versions of WordPress, WORDPLAN and their extensions are "
+"used. Compatibility can be found in the Environments section."
+msgstr ""
+
+#: views/helps/bugs.php:19
+msgid ""
+"If all settings are made correctly and compatible products of the latest "
+"versions are used, but the error is still present, you must report it."
+msgstr ""
+
+#: views/helps/bugs.php:20
+msgid ""
+"Report a bug using the methods available to you. When reporting a bug, you "
+"must have a valid technical support code for the project on which the bug "
+"occurred."
+msgstr ""
+
+#: views/helps/features.php:6
+msgid ""
+"First of all, you need to make sure - whether the necessary opportunity is "
+"really missing."
+msgstr ""
+
+#: views/helps/features.php:7
+msgid ""
+"It may be worth looking at the available settings or reading the "
+"documentation."
+msgstr ""
+
+#: views/helps/features.php:11
+msgid "Also, before requesting an opportunity, you need to make sure that:"
+msgstr ""
+
+#: views/helps/features.php:15
+msgid "Is the required feature added in WORDPLAN updates."
+msgstr ""
+
+#: views/helps/features.php:16
+msgid ""
+"Whether the possibility is implemented by an additional extension to WORDPLAN."
+msgstr ""
+
+#: views/helps/features.php:17
+msgid "Whether the desired opportunity is waiting for its implementation."
+msgstr ""
+
+#: views/helps/features.php:21
+msgid ""
+"If the feature is added in WORDPLAN updates, you just need to install the "
+"updated version."
+msgstr ""
+
+#: views/helps/features.php:25
+msgid ""
+"But if the feature is implemented in an extension to WORDPLAN, then this "
+"feature should not be expected as part of WORDPLAN and you need to install "
+"the extension."
+msgstr ""
+
+#: views/helps/features.php:26
+msgid ""
+"Because the feature implemented in the extension is so significant that it "
+"needed to create an extension for it."
+msgstr ""
+
+#: views/helps/features.php:31
+msgid "Features"
+msgstr ""
+
+#: views/helps/main.php:7
+msgid ""
+"If no understand how Integration with Megaplan works, how to use and "
+"supplement it, can view the documentation."
+msgstr ""
+
+#: views/helps/main.php:8
+msgid ""
+"Documentation contains all kinds of resources such as code snippets, user "
+"guides and more."
+msgstr ""
+
+#: views/helps/main.php:13
+msgid "Documentation"
+msgstr ""
+
+#: views/settings/error.php:3
+msgid "Error. Page for settings not found."
+msgstr ""
+
+#: views/settings/form.php:11
+msgid "Save settings"
+msgstr ""
+
+#: views/tools/empty.php:4
+msgid "Tools not found."
+msgstr ""
+
+#: views/tools/empty.php:5
+msgid "As soon as the tools are installed, they will appear in this section."
+msgstr ""
+
+#: views/tools/item.php:14
+msgid "Open"
+msgstr ""
+
+#: views/wizards/error.php:3
+msgid "Error. Step not found or unavailable."
+msgstr ""
+
+#: views/wizards/header.php:7
+msgid "Master of install and update"
+msgstr ""
+
+#: views/wizards/page.php:42
+msgid "Step"
+msgstr ""
+
+#: views/wizards/steps/check.php:15
+msgid "Welcome to WORDPLAN!"
+msgstr ""
+
+#: views/wizards/steps/check.php:16
+msgid ""
+"Thank you for choosing WORDPLAN to website! This is only complete solution "
+"for integrating WordPress with Megaplan."
+msgstr ""
+
+#: views/wizards/steps/check.php:18
+msgid "This quick setup wizard will help you configure the basic settings."
+msgstr ""
+
+#: views/wizards/steps/check.php:22
+msgid ""
+"PHP scripts execution time is less than 10 seconds. WC1C requires at least "
+"20. Set php_max_execution_time to more than 20 seconds."
+msgstr ""
+
+#: views/wizards/steps/check.php:26
+msgid "Its should not take longer than five minutes."
+msgstr ""
+
+#: views/wizards/steps/check.php:29 views/wizards/steps/database.php:21
+msgid "Lets Go!"
+msgstr ""
+
+#: views/wizards/steps/check.php:35
+msgid "Need to fix the compatibility errors and return to the setup wizard."
+msgstr ""
+
+#: views/wizards/steps/complete.php:15
+msgid "Installation completed!"
+msgstr ""
+
+#: views/wizards/steps/complete.php:16
+msgid "Now you can proceed to using the WORDPLAN plugin."
+msgstr ""
+
+#: views/wizards/steps/complete.php:20
+msgid "Go to use"
+msgstr ""
+
+#: views/wizards/steps/database.php:15
+msgid "Creating tables in the database"
+msgstr ""
+
+#: views/wizards/steps/database.php:16
+msgid "If continue, the required tables will be created in the database."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WordPlan"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/wordplan"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Implementation of a mechanism for flexible exchange of various data between "
+"Megaplan and a site running WordPress."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WordPlan team"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wordplan.ru"
+msgstr ""

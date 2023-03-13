@@ -1,0 +1,52 @@
+.wordplan-title-wrap
+{
+  padding: 5px 7px;
+  background-color: #f0f0f1;
+
+  h3
+  {
+    margin: 0.1em 0;
+    font-size: 1.2em;
+  }
+
+  p
+  {
+    margin: 0.3em 0;
+  }
+}
+
+.wordplan-admin-settings
+{
+  .wordplan-title-wrap
+  {
+    //background-color: #dcdcde;
+    //margin-top: 30px;
+  }
+}
+
+.wordplan-admin-connection
+{
+  .wordplan-title-wrap
+  {
+    margin-top: 10px;
+  }
+}
+
+.wordplan-custom-metas
+{
+  border: 1px solid #ccd0d4;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.wrap .notice
+{
+  margin: 15px 0 5px!important;
+}
+
+.wrap .section-border
+{
+  border: 1px solid #c3c4c7 !important;
+}
