@@ -14,4 +14,5 @@ return array(
     'Digiom\\Woplucore\\' => array($vendorDir . '/digiom/woplucore/src'),
     'Digiom\\Woap\\' => array($vendorDir . '/digiom/woap/src'),
     'Digiom\\Psr7wp\\' => array($vendorDir . '/digiom/psr7wp/src'),
+    'Digiom\\ApiMegaplan\\' => array($vendorDir . '/digiom/api-megaplan/src'),
 );

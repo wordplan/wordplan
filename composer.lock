@@ -4,8 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6aac59bfa85124fb662ff1aa961292c9",
+    "content-hash": "842af42a55716bc817c00e878ac83974",
     "packages": [
+        {
+            "name": "digiom/api-megaplan",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/digiom/api-megaplan.git",
+                "reference": "b855386f728dde8aa8ea875a4b913013a06525ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/digiom/api-megaplan/zipball/b855386f728dde8aa8ea875a4b913013a06525ed",
+                "reference": "b855386f728dde8aa8ea875a4b913013a06525ed",
+                "shasum": ""
+            },
+            "require": {
+                "digiom/psr7wp": "dev-main",
+                "ext-json": "*",
+                "php": ">=7.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Digiom\\ApiMegaplan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Frescoref",
+                    "email": "frescoref@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "API for Megaplan",
+            "homepage": "https://digiom.ru",
+            "support": {
+                "source": "https://github.com/digiom/api-megaplan/tree/main"
+            },
+            "time": "2023-03-13T20:52:28+00:00"
+        },
         {
             "name": "digiom/psr7wp",
             "version": "dev-main",
@@ -97,12 +141,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/digiom/woplucore.git",
-                "reference": "be219a5386e4b1b4366363f59f66471dc8f748d1"
+                "reference": "c3d360e06b7e2777b2a9d677b11289c1dd9f7248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digiom/woplucore/zipball/be219a5386e4b1b4366363f59f66471dc8f748d1",
-                "reference": "be219a5386e4b1b4366363f59f66471dc8f748d1",
+                "url": "https://api.github.com/repos/digiom/woplucore/zipball/c3d360e06b7e2777b2a9d677b11289c1dd9f7248",
+                "reference": "c3d360e06b7e2777b2a9d677b11289c1dd9f7248",
                 "shasum": ""
             },
             "require": {
@@ -133,7 +177,7 @@
             "support": {
                 "source": "https://github.com/digiom/woplucore/tree/main"
             },
-            "time": "2023-03-10T22:17:02+00:00"
+            "time": "2023-03-12T10:20:43+00:00"
         },
         {
             "name": "digiom/wotices",
@@ -371,6 +415,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "digiom/woplucore": 20,
+        "digiom/api-megaplan": 20,
         "digiom/psr7wp": 20,
         "digiom/woap": 20
     },

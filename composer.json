@@ -19,6 +19,7 @@
     "php": ">=7.0",
     "digiom/woplucore": "dev-main",
     "digiom/wotices": "1.*",
+    "digiom/api-megaplan": "dev-main",
     "digiom/psr7wp": "dev-main",
     "digiom/woap": "dev-main",
     "psr/log": "1.*",

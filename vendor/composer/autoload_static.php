@@ -26,6 +26,7 @@ class ComposerStaticInitccebc47727f2d73025e3b0e445a0d4d2
             'Digiom\\Woplucore\\' => 17,
             'Digiom\\Woap\\' => 12,
             'Digiom\\Psr7wp\\' => 14,
+            'Digiom\\ApiMegaplan\\' => 19,
         ),
     );
 
@@ -61,6 +62,10 @@ class ComposerStaticInitccebc47727f2d73025e3b0e445a0d4d2
         'Digiom\\Psr7wp\\' => 
         array (
             0 => __DIR__ . '/..' . '/digiom/psr7wp/src',
+        ),
+        'Digiom\\ApiMegaplan\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/digiom/api-megaplan/src',
         ),
     );
 

@@ -3,13 +3,24 @@
         'name' => 'wordplan/wordplan',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'b67f82f2bb0ad548331a0a9b0e29fd08d3b71630',
+        'reference' => 'b7d0e70c970bc52da5905d60635587233fcd21e6',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'digiom/api-megaplan' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'b855386f728dde8aa8ea875a4b913013a06525ed',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../digiom/api-megaplan',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => false,
+        ),
         'digiom/psr7wp' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
@@ -35,7 +46,7 @@
         'digiom/woplucore' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'be219a5386e4b1b4366363f59f66471dc8f748d1',
+            'reference' => 'c3d360e06b7e2777b2a9d677b11289c1dd9f7248',
             'type' => 'library',
             'install_path' => __DIR__ . '/../digiom/woplucore',
             'aliases' => array(
@@ -88,7 +99,7 @@
         'wordplan/wordplan' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'b67f82f2bb0ad548331a0a9b0e29fd08d3b71630',
+            'reference' => 'b7d0e70c970bc52da5905d60635587233fcd21e6',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
