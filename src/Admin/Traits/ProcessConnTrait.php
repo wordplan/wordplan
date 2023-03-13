@@ -23,7 +23,7 @@ trait ProcessConnTrait
 	 * @return bool
 	 * @throws \Exception
 	 */
-	public function setAccount($conn_id): bool
+	public function setConn($conn_id): bool
 	{
 		if($conn_id instanceof Conn)
 		{
@@ -56,7 +56,7 @@ trait ProcessConnTrait
 	/**
 	 * @return Conn
 	 */
-	public function getAccount(): Conn
+	public function getConn(): Conn
 	{
 		return $this->conn;
 	}
