@@ -57,7 +57,7 @@ class ByApplicationForm extends Form
 
 		$fields['token'] =
 		[
-			'title' => __('Token', 'wordplan'),
+			'title' => __('API Token', 'wordplan'),
 			'type' => 'text',
 			'description' => __('The token can be generated in Megaplan.', 'wordplan'),
 			'default' => '',
