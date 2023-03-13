@@ -48,7 +48,7 @@ class ByApplicationForm extends Form
 
 		$fields['uuid'] =
 		[
-			'title' => __('Uuid', 'wordplan'),
+			'title' => __('UUID', 'wordplan'),
 			'type' => 'text',
 			'description' => __('Unique application identifier from Megaplan.', 'wordplan'),
 			'default' => '',
