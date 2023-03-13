@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WORDPLAN\n"
-"POT-Creation-Date: 2023-03-11 02:52+0300\n"
-"PO-Revision-Date: 2023-03-11 03:03+0300\n"
+"POT-Creation-Date: 2023-03-14 00:27+0300\n"
+"PO-Revision-Date: 2023-03-14 00:28+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -27,8 +27,8 @@ msgid ""
 "WordPlan successfully activated. You have made the right choice to integrate "
 "the site with Megaplan (plugin number one)!"
 msgstr ""
-"WordPlan успешно активирован. Вы сделали правильный выбор, интегрировав сайт "
-"с Мегапланом (плагин номер один)!"
+"WordPlan успешно активирован. Вы сделали правильный выбор плагина для "
+"интеграции сайта с Мегапланом (плагин номер один)!"
 
 #: src/Activation.php:28
 msgid ""
@@ -48,17 +48,17 @@ msgstr "Перейти к настройке."
 msgid "Megaplan"
 msgstr "Мегаплан"
 
-#: src/Admin.php:111 src/Admin.php:112 views/accounts/empty.php:23
-#: views/add/header.php:6
+#: src/Admin.php:111 src/Admin.php:112 views/add/header.php:6
+#: views/conns/empty.php:23
 msgid "Add conns"
-msgstr "Добавить приложения"
+msgstr "Добавить подключения"
 
-#: src/Admin.php:121 src/Admin.php:122 src/Admin/Settings/LogsForm.php:90
+#: src/Admin.php:121 src/Admin.php:122 src/Admin/Settings/LogsForm.php:91
 #: views/tools/header.php:7
 msgid "Tools"
 msgstr "Инструменты"
 
-#: src/Admin.php:131 src/Admin.php:132 src/Admin/Apps/Dashboard.php:35
+#: src/Admin.php:131 src/Admin.php:132 src/Admin/Conns/Dashboard.php:35
 #: views/settings/header.php:6
 msgid "Settings"
 msgstr "Настройки"
@@ -68,344 +68,376 @@ msgstr "Настройки"
 msgid "Extensions"
 msgstr "Расширения"
 
-#: src/Admin.php:159 src/Admin/Settings/LogsForm.php:73
+#: src/Admin.php:159 src/Admin/Settings/LogsForm.php:74
 #: src/Admin/Settings/MainForm.php:89
 msgid "Conns"
-msgstr "Приложения"
+msgstr "Подключения"
 
-#: src/Admin.php:272 src/Admin/Apps/AllTable.php:175
-#: views/accounts/dashboard.php:6 views/accounts/sections_single.php:6
+#: src/Admin.php:272 src/Admin/Conns/AllTable.php:175
+#: views/conns/dashboard.php:6 views/conns/sections_single.php:6
 msgid "Dashboard"
 msgstr "Панель"
 
 #: src/Admin/Add.php:53
-msgid "By Login & Password"
-msgstr "По Логину и Паролю"
+msgid "By User"
+msgstr "По пользователю"
 
 #: src/Admin/Add.php:60
-msgid "By Token"
-msgstr "По Токену"
+msgid "By Application"
+msgstr "По Приложению"
 
-#: src/Admin/Add/ByLoginForm.php:39 src/Admin/Apps/Create.php:47
-msgid "Connect by Login & Password"
-msgstr "Подключение по Логину и Паролю"
+#: src/Admin/Add/ByApplicationForm.php:39
+msgid "Connect by Application"
+msgstr "Подключение по Приложению"
 
-#: src/Admin/Add/ByLoginForm.php:41
-msgid "Connection to MoySklad by login and password."
-msgstr "Подключение к Мой Склад по логину и паролю."
+#: src/Admin/Add/ByApplicationForm.php:44
+msgid "Connection to Megaplan using a token generated on the Megaplan side."
+msgstr ""
+"Подключение к Мегаплану с помощью токена, сгенерированного на стороне "
+"Мегаплана."
 
-#: src/Admin/Add/ByLoginForm.php:46 src/Admin/Settings/ConnectionForm.php:215
+#: src/Admin/Add/ByApplicationForm.php:45
+msgid "The token must be for the specified unique application identifier."
+msgstr ""
+"Токен должен быть для указанного уникального идентификатора приложения."
+
+#: src/Admin/Add/ByApplicationForm.php:51 src/Admin/Conns/MainUpdate.php:142
+msgid "UUID"
+msgstr "UUID"
+
+#: src/Admin/Add/ByApplicationForm.php:53 src/Admin/Conns/MainUpdate.php:144
+msgid "Unique application identifier from Megaplan."
+msgstr "Уникальный идентификатор приложения от Мегаплан."
+
+#: src/Admin/Add/ByApplicationForm.php:60 src/Admin/Conns/MainUpdate.php:151
+#: src/Admin/Conns/MainUpdate.php:204
+msgid "API Token"
+msgstr "Токен для API"
+
+#: src/Admin/Add/ByApplicationForm.php:62 src/Admin/Conns/MainUpdate.php:153
+msgid "The token can be generated in Megaplan."
+msgstr "Токен можно сгенерировать в Мегаплане."
+
+#: src/Admin/Add/ByUserForm.php:39
+msgid "Connect by User"
+msgstr "Подключение по Пользователю"
+
+#: src/Admin/Add/ByUserForm.php:44
+msgid "Connection to Megaplan by login and password."
+msgstr "Подключение к Мегаплан по логину и паролю."
+
+#: src/Admin/Add/ByUserForm.php:45
+msgid ""
+"Login and password will not be saved. Instead, an access token will be "
+"generated."
+msgstr ""
+"Логин и пароль не сохраняются. Вместо этого будет сгенерирован токен доступа."
+
+#: src/Admin/Add/ByUserForm.php:46
+msgid "All further manipulations will be performed using the user token."
+msgstr ""
+"Все дальнейшие манипуляции будут производиться с использованием "
+"пользовательского токена."
+
+#: src/Admin/Add/ByUserForm.php:52 src/Admin/Settings/ConnectionForm.php:215
 msgid "Login"
 msgstr "Логин"
 
-#: src/Admin/Add/ByLoginForm.php:48
-msgid "This login is used to enter the MoySklad service."
-msgstr "Этот логин используется для входа в сервис МойСклад."
+#: src/Admin/Add/ByUserForm.php:54
+msgid "This login is used to enter the Megaplan service."
+msgstr "Этот логин используется для входа в сервис Мегаплан."
 
-#: src/Admin/Add/ByLoginForm.php:55
+#: src/Admin/Add/ByUserForm.php:61
 msgid "Password"
 msgstr "Пароль"
 
-#: src/Admin/Add/ByLoginForm.php:57
-msgid "Password from the entered login to enter the MoySklad service."
-msgstr "Пароль от введенного логина для входа в сервис МойСклад."
+#: src/Admin/Add/ByUserForm.php:63
+msgid "Password from the entered login to enter the Megaplan service."
+msgstr "Пароль от введенного логина для входа в сервис Мегаплан."
 
-#: src/Admin/Add/ByTokenForm.php:39 src/Admin/Apps/Create.php:54
-msgid "Connect by Token"
-msgstr "Подключение по Токену"
-
-#: src/Admin/Add/ByTokenForm.php:41
-msgid "Connection to MoySklad using a token generated on the MoySklad side."
-msgstr ""
-"Подключение к МойСклад с помощью токена, сгенерированного на стороне "
-"МойСклад."
-
-#: src/Admin/Add/ByTokenForm.php:46 src/Admin/Apps/MainUpdate.php:134
-msgid "Token"
-msgstr "Токен"
-
-#: src/Admin/Add/ByTokenForm.php:48
-msgid ""
-"The token can be generated in MoySklad. After generating it, you must enter "
-"it and click on the button for connection."
-msgstr ""
-"Токен можно сгенерировать в МойСклад. После его создания необходимо ввести "
-"его и нажать кнопку подключения."
-
-#: src/Admin/Add/Form.php:50
+#: src/Admin/Add/Form.php:49
 msgid "Name"
 msgstr "Наименование"
 
-#: src/Admin/Add/Form.php:52
+#: src/Admin/Add/Form.php:51
 msgid "An arbitrary name for the connection. Used for reference purposes."
 msgstr "Произвольное имя для подключения. Используется в справочных целях."
 
-#: src/Admin/Add/Form.php:72
-msgid "Test"
-msgstr "Тест"
+#: src/Admin/Add/Form.php:58
+msgid "Host"
+msgstr "Хост"
 
-#: src/Admin/Add/Form.php:74
-msgid "Test connection before adding?"
-msgstr "Проверить соединение перед добавлением?"
+#: src/Admin/Add/Form.php:60
+msgid ""
+"Megaplan address. You can copy from the browser line, leaving only the "
+"domain name. Example: mp97470037.megaplan.ru"
+msgstr ""
+"Адрес Мегаплан. Можно скопировать из браузера строку, оставив только "
+"доменное имя. Пример: mp97470037.megaplan.ru"
 
-#: src/Admin/Add/Form.php:102 src/Admin/Settings/ConnectionForm.php:160
+#: src/Admin/Add/Form.php:89 src/Admin/Settings/ConnectionForm.php:160
 msgid "Connection error. Please retry."
 msgstr "Ошибка подключения. Пожалуйста повторите."
 
+#: src/Admin/Add/Form.php:129
+msgid "Create connection error. Name is required."
+msgstr "Ошибка подключения. Необходимо указать наименование."
+
 #: src/Admin/Add/Form.php:142
-msgid "Conn connection error. Name is required."
-msgstr ""
+msgid "Create connection error. Host is required."
+msgstr "Ошибка подключения. Необходимо указать адрес мегалпана."
 
 #: src/Admin/Add/Form.php:163
-msgid "Conn connection error. Login is required."
-msgstr ""
+msgid "Create connection error. Login is required."
+msgstr "Ошибка подключения. Необходимо указать логин."
 
 #: src/Admin/Add/Form.php:176
-msgid "Conn connection error. Password is required."
-msgstr ""
+msgid "Create connection error. Password is required."
+msgstr "Ошибка подключения. Необходимо указать пароль."
 
 #: src/Admin/Add/Form.php:190
-msgid "Conn connection error. Token is required."
-msgstr ""
+msgid "Create connection error. APP Token is required."
+msgstr "Ошибка подключения. Необходимо указать токен приложения."
 
-#: src/Admin/Add/Form.php:208
-msgid "Conn connection error. Name is exists."
-msgstr ""
+#: src/Admin/Add/Form.php:209
+msgid "Create connection error. Name is exists."
+msgstr "Ошибка подключения. Имя существует."
 
-#: src/Admin/Add/Form.php:225
-msgid "Conn connection error. Login is exists."
-msgstr ""
+#: src/Admin/Add/Form.php:256
+msgid "Create connection success. connection id:"
+msgstr "Соединение успешно создано. Идентификатор:"
 
-#: src/Admin/Add/Form.php:244
-msgid "Conn connection error. Token is exists."
-msgstr ""
+#: src/Admin/Add/Form.php:257
+msgid "edit conn"
+msgstr "редактировать подклюение"
 
-#: src/Admin/Add/Form.php:270 src/Admin/Apps/Verification.php:101
-msgid "Conn connection error. Test connection is not success."
-msgstr ""
+#: src/Admin/Add/Form.php:269
+msgid "Create connection error. Please retry saving or change fields."
+msgstr "Ошибка создания подключения. Пожалуйста повторите."
 
-#: src/Admin/Add/Form.php:295
-msgid "Conn connection success. Conn connection id:"
-msgstr ""
-
-#: src/Admin/Add/Form.php:296
-msgid "edit app"
-msgstr "редактировать приложение"
-
-#: src/Admin/Add/Form.php:308
-msgid "Conn connection error. Please retry saving or change fields."
-msgstr ""
-
-#: src/Admin/Apps/AllTable.php:115
+#: src/Admin/Conns/AllTable.php:115
 msgid "Time"
 msgstr "Время"
 
-#: src/Admin/Apps/AllTable.php:117
+#: src/Admin/Conns/AllTable.php:117
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid "(%s ago)"
 msgstr "(%s назад)"
 
-#: src/Admin/Apps/AllTable.php:121
+#: src/Admin/Conns/AllTable.php:121
 msgid "No activity"
 msgstr "Не было"
 
-#: src/Admin/Apps/AllTable.php:176
+#: src/Admin/Conns/AllTable.php:176
 msgid "Verification"
 msgstr "Проверить"
 
-#: src/Admin/Apps/AllTable.php:177
+#: src/Admin/Conns/AllTable.php:177
 msgid "Mark as deleted"
 msgstr "Пометить на удаление"
 
-#: src/Admin/Apps/AllTable.php:183
+#: src/Admin/Conns/AllTable.php:183
 msgid "Remove forever"
 msgstr "Удалить окончательно"
 
-#: src/Admin/Apps/AllTable.php:196
+#: src/Admin/Conns/AllTable.php:196
 msgid "User: "
 msgstr "Пользователь: "
 
-#: src/Admin/Apps/AllTable.php:200 src/Admin/Apps/Dashboard.php:213
+#: src/Admin/Conns/AllTable.php:200 src/Admin/Conns/Dashboard.php:213
 msgid "User is not exists."
 msgstr "Пользователь не существует."
 
-#: src/Admin/Apps/AllTable.php:208
+#: src/Admin/Conns/AllTable.php:208
 msgid "Connection type: "
 msgstr "Тип подключения: "
 
-#: src/Admin/Apps/AllTable.php:252
+#: src/Admin/Conns/AllTable.php:252
 msgid "ID"
 msgstr "ID"
 
-#: src/Admin/Apps/AllTable.php:253
+#: src/Admin/Conns/AllTable.php:253
 msgid "Base information"
 msgstr "Базовая информация"
 
-#: src/Admin/Apps/AllTable.php:254 src/Admin/Apps/Dashboard.php:188
-#: src/Admin/Apps/UpdateForm.php:42 src/Admin/Settings/ActivationForm.php:159
+#: src/Admin/Conns/AllTable.php:254 src/Admin/Conns/Dashboard.php:188
+#: src/Admin/Conns/UpdateForm.php:42 src/Admin/Settings/ActivationForm.php:159
 msgid "Status"
 msgstr "Статус"
 
-#: src/Admin/Apps/AllTable.php:255
+#: src/Admin/Conns/AllTable.php:255
 msgid "Connection date"
 msgstr "Дата подключения"
 
-#: src/Admin/Apps/AllTable.php:256
+#: src/Admin/Conns/AllTable.php:256
 msgid "Last activity"
 msgstr "Активность"
 
-#: src/Admin/Apps/AllTable.php:304
+#: src/Admin/Conns/AllTable.php:304
 msgid "All"
 msgstr "Все"
 
-#: src/Admin/Apps/Dashboard.php:39
+#: src/Admin/Conns/Dashboard.php:39
 msgid ""
 "Updating the parameters of all basic settings, including data for "
 "authorization in Megaplan."
 msgstr ""
+"Обновление параметров всех основных настроек, включая данные для авторизации "
+"в Мегаплане."
 
-#: src/Admin/Apps/Dashboard.php:181
-msgid "About app"
-msgstr "О приложении"
+#: src/Admin/Conns/Dashboard.php:181
+msgid "About conn"
+msgstr "О подключении"
 
-#: src/Admin/Apps/Dashboard.php:192
+#: src/Admin/Conns/Dashboard.php:192
 msgid "Date active:"
 msgstr "Последняя активность:"
 
-#: src/Admin/Apps/Dashboard.php:196 src/Admin/Apps/Dashboard.php:222
-#: src/Admin/Apps/Dashboard.php:231
+#: src/Admin/Conns/Dashboard.php:196 src/Admin/Conns/Dashboard.php:222
+#: src/Admin/Conns/Dashboard.php:231
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid " (%s ago)."
 msgstr " (%s назад)."
 
-#: src/Admin/Apps/Dashboard.php:201 views/extensions/item.php:20
+#: src/Admin/Conns/Dashboard.php:201 views/extensions/item.php:20
 msgid "ID:"
 msgstr "ID:"
 
-#: src/Admin/Apps/Dashboard.php:209
+#: src/Admin/Conns/Dashboard.php:209
 msgid "Owner:"
 msgstr "Владелец:"
 
-#: src/Admin/Apps/Dashboard.php:218
+#: src/Admin/Conns/Dashboard.php:218
 msgid "Date create:"
 msgstr "Дата создания:"
 
-#: src/Admin/Apps/Dashboard.php:227
+#: src/Admin/Conns/Dashboard.php:227
 msgid "Date modify:"
 msgstr "Дата изменения:"
 
-#: src/Admin/Apps/Dashboard.php:237
+#: src/Admin/Conns/Dashboard.php:237
 msgid "Directory:"
 msgstr "Директория:"
 
-#: src/Admin/Apps/Dashboard.php:249
+#: src/Admin/Conns/Dashboard.php:249
 msgid "Directory size:"
 msgstr "Размер директории:"
 
-#: src/Admin/Apps/Dashboard.php:261
+#: src/Admin/Conns/Dashboard.php:261
 msgid "Logs directory size:"
 msgstr "Размер директории журналов:"
 
-#: src/Admin/Apps/Delete.php:76
-msgid "Error. The app to be deleted is active and cannot be deleted."
-msgstr ""
+#: src/Admin/Conns/Delete.php:76
+msgid "Error. The conn to be deleted is active and cannot be deleted."
+msgstr "Ошибка. Удаляемое подключение активно и не может быть удалено."
 
-#: src/Admin/Apps/Delete.php:129
-msgid "The app has been marked as deleted."
-msgstr ""
+#: src/Admin/Conns/Delete.php:129
+msgid "The conn has been marked as deleted."
+msgstr "Подключение помечено как удаленное."
 
-#: src/Admin/Apps/Delete.php:137
-msgid "The app has been successfully disconnected."
-msgstr ""
+#: src/Admin/Conns/Delete.php:137
+msgid "The conn has been successfully disconnected."
+msgstr "Подключение было успешно отключено."
 
-#: src/Admin/Apps/Delete.php:144
+#: src/Admin/Conns/Delete.php:144
 msgid "Deleting error. Please retry again."
 msgstr "Ошибка при удалении. Пожалуйста, попробуйте еще раз."
 
-#: src/Admin/Apps/DeleteForm.php:40
+#: src/Admin/Conns/DeleteForm.php:40
 msgid "Delete confirmation"
 msgstr "Подтверждение удаления"
 
-#: src/Admin/Apps/DeleteForm.php:45
+#: src/Admin/Conns/DeleteForm.php:45
 msgid ""
 "I confirm that Conn will be permanently and irrevocably deleted from "
 "WordPress."
 msgstr ""
+"Я подтверждаю, что подключение будет навсегда и безвозвратно удалено из "
+"WordPress."
 
-#: src/Admin/Apps/DeleteForm.php:46
+#: src/Admin/Conns/DeleteForm.php:46
 msgid ""
-"The directory with files for app from the FILE system will be completely "
+"The directory with files for conn from the FILE system will be completely "
 "removed."
 msgstr ""
+"Каталог с файлами для подключения из ФАЙЛОВОЙ системы будет полностью удален."
 
-#: src/Admin/Apps/DeleteForm.php:88
+#: src/Admin/Conns/DeleteForm.php:88
 msgid "Delete error. Please retry."
 msgstr "Ошибка при удалении. Пожалуйста повторите."
 
-#: src/Admin/Apps/DeleteForm.php:130
+#: src/Admin/Conns/DeleteForm.php:130
 msgid "Delete error. Confirmation of final deletion is required."
 msgstr "Ошибка удаления. Требуется подтверждение окончательного удаления."
 
-#: src/Admin/Apps/MainUpdate.php:90
+#: src/Admin/Conns/MainUpdate.php:98
 msgid "Conn update success."
-msgstr ""
+msgstr "Подключение успешно обновлено."
 
-#: src/Admin/Apps/MainUpdate.php:100
+#: src/Admin/Conns/MainUpdate.php:108
 msgid "Conn update error. Please retry saving or change fields."
 msgstr ""
+"Ошибка обновления соединения. Повторите попытку сохранения или изменения "
+"полей."
 
-#: src/Admin/Apps/MainUpdate.php:122 src/Admin/Apps/MainUpdate.php:155
+#: src/Admin/Conns/MainUpdate.php:130 src/Admin/Conns/MainUpdate.php:172
 msgid "Authorization data"
 msgstr "Авторизация"
 
-#: src/Admin/Apps/MainUpdate.php:127 src/Admin/Apps/MainUpdate.php:160
-msgid "Authorization of requests for current app."
-msgstr ""
+#: src/Admin/Conns/MainUpdate.php:135 src/Admin/Conns/MainUpdate.php:177
+msgid "Authorization of requests for current conn."
+msgstr "Авторизация запросов для текущего подключения."
 
-#: src/Admin/Apps/MainUpdate.php:128 src/Admin/Apps/MainUpdate.php:161
+#: src/Admin/Conns/MainUpdate.php:136 src/Admin/Conns/MainUpdate.php:178
 msgid "Used for authorization in Megaplan service."
-msgstr ""
+msgstr "Используется для авторизации в сервисе Мегаплан."
 
-#: src/Admin/Apps/MainUpdate.php:136
-msgid ""
-"Get it in app on the Megaplan. In the future, it is necessary to monitor its "
-"relevance."
-msgstr ""
-
-#: src/Admin/Apps/MainUpdate.php:167
+#: src/Admin/Conns/MainUpdate.php:184
 msgid "Username"
 msgstr "Имя пользователя"
 
-#: src/Admin/Apps/MainUpdate.php:169
+#: src/Admin/Conns/MainUpdate.php:186
 msgid ""
-"Login in Megaplan. After adding an app, changing the login is not possible."
+"Login in Megaplan. After adding an conn, changing the login is not possible."
 msgstr ""
+"Имя пользователя в Мегаплан. После добавления подключения смена логина "
+"невозможна."
 
-#: src/Admin/Apps/MainUpdate.php:178
+#: src/Admin/Conns/MainUpdate.php:195
 msgid "User password"
 msgstr "Пароль пользователя"
 
-#: src/Admin/Apps/MainUpdate.php:180
+#: src/Admin/Conns/MainUpdate.php:197
 msgid "Password for the specified user Megaplan."
-msgstr ""
+msgstr "Пароль для указанного пользователя Мегаплан."
 
-#: src/Admin/Apps/MainUpdate.php:199 src/Admin/Settings.php:61
+#: src/Admin/Conns/MainUpdate.php:206
+msgid ""
+"The current access token. Has an expiration date. To force the update, you "
+"must enter a username and password."
+msgstr ""
+"Текущий токен для доступа. Имеет срок годности. Для принудительного "
+"обновления необходимо ввести логин и пароль."
+
+#: src/Admin/Conns/MainUpdate.php:225 src/Admin/Settings.php:61
 msgid "Event logs"
 msgstr "Журналы событий"
 
-#: src/Admin/Apps/MainUpdate.php:201
+#: src/Admin/Conns/MainUpdate.php:227
 msgid ""
-"Maintaining event logs for the current app. You can view the logs through "
+"Maintaining event logs for the current conn. You can view the logs through "
 "the extension or via FTP."
 msgstr ""
+"Ведение журналов событий для текущего подключения. Вы можете просматривать "
+"журналы через расширение или через FTP."
 
-#: src/Admin/Apps/MainUpdate.php:206
+#: src/Admin/Conns/MainUpdate.php:232
 msgid "Level for events"
 msgstr "Уровень для событий"
 
-#: src/Admin/Apps/MainUpdate.php:208 src/Admin/Settings/LogsForm.php:43
+#: src/Admin/Conns/MainUpdate.php:234 src/Admin/Settings/LogsForm.php:44
 msgid ""
 "All events of the selected level will be recorded in the log file. The "
 "higher the level, the less data is recorded."
@@ -413,41 +445,41 @@ msgstr ""
 "Все события выбранного уровня будут записаны в файл журнала. Чем выше "
 "уровень, тем меньше записывается данных."
 
-#: src/Admin/Apps/MainUpdate.php:212 src/Admin/Settings/LogsForm.php:79
-#: src/Admin/Settings/LogsForm.php:96
+#: src/Admin/Conns/MainUpdate.php:238 src/Admin/Settings/LogsForm.php:80
+#: src/Admin/Settings/LogsForm.php:97
 msgid "Use level for main events"
 msgstr "Использовать уровень для основных событий"
 
-#: src/Admin/Apps/MainUpdate.php:213 src/Admin/Settings/LogsForm.php:47
-#: src/Admin/Settings/LogsForm.php:80 src/Admin/Settings/LogsForm.php:97
+#: src/Admin/Conns/MainUpdate.php:239 src/Admin/Settings/LogsForm.php:48
+#: src/Admin/Settings/LogsForm.php:81 src/Admin/Settings/LogsForm.php:98
 msgid "DEBUG (100)"
 msgstr "Отладка — DEBUG (100)"
 
-#: src/Admin/Apps/MainUpdate.php:214 src/Admin/Settings/LogsForm.php:48
-#: src/Admin/Settings/LogsForm.php:81 src/Admin/Settings/LogsForm.php:98
+#: src/Admin/Conns/MainUpdate.php:240 src/Admin/Settings/LogsForm.php:49
+#: src/Admin/Settings/LogsForm.php:82 src/Admin/Settings/LogsForm.php:99
 msgid "INFO (200)"
 msgstr "Информация — INFO (200)"
 
-#: src/Admin/Apps/MainUpdate.php:215 src/Admin/Settings/LogsForm.php:49
-#: src/Admin/Settings/LogsForm.php:82 src/Admin/Settings/LogsForm.php:99
+#: src/Admin/Conns/MainUpdate.php:241 src/Admin/Settings/LogsForm.php:50
+#: src/Admin/Settings/LogsForm.php:83 src/Admin/Settings/LogsForm.php:100
 msgid "NOTICE (250)"
 msgstr "Замечание — NOTICE (250)"
 
-#: src/Admin/Apps/MainUpdate.php:216 src/Admin/Settings/LogsForm.php:50
-#: src/Admin/Settings/LogsForm.php:83 src/Admin/Settings/LogsForm.php:100
+#: src/Admin/Conns/MainUpdate.php:242 src/Admin/Settings/LogsForm.php:51
+#: src/Admin/Settings/LogsForm.php:84 src/Admin/Settings/LogsForm.php:101
 msgid "WARNING (300)"
 msgstr "Предупреждение — WARNING (300)"
 
-#: src/Admin/Apps/MainUpdate.php:217 src/Admin/Settings/LogsForm.php:51
-#: src/Admin/Settings/LogsForm.php:84 src/Admin/Settings/LogsForm.php:101
+#: src/Admin/Conns/MainUpdate.php:243 src/Admin/Settings/LogsForm.php:52
+#: src/Admin/Settings/LogsForm.php:85 src/Admin/Settings/LogsForm.php:102
 msgid "ERROR (400)"
 msgstr "Ошибка — ERROR (400)"
 
-#: src/Admin/Apps/MainUpdate.php:223 src/Admin/Settings/LogsForm.php:57
+#: src/Admin/Conns/MainUpdate.php:249 src/Admin/Settings/LogsForm.php:58
 msgid "Maximum files"
 msgstr "Максимальное количество файлов"
 
-#: src/Admin/Apps/MainUpdate.php:225 src/Admin/Settings/LogsForm.php:59
+#: src/Admin/Conns/MainUpdate.php:251 src/Admin/Settings/LogsForm.php:60
 msgid ""
 "Log files created daily. This option on the maximum number of stored files. "
 "By default saved of the logs are for the last 30 days."
@@ -456,42 +488,47 @@ msgstr ""
 "количество хранимых файлов. По умолчанию сохраняются журналы за последние 30 "
 "дней."
 
-#: src/Admin/Apps/MainUpdate.php:244
+#: src/Admin/Conns/MainUpdate.php:270
 msgid "Other parameters"
 msgstr "Прочие параметры"
 
-#: src/Admin/Apps/MainUpdate.php:246
+#: src/Admin/Conns/MainUpdate.php:272
 msgid ""
 "Change of data processing behavior for environment compatibility and so on."
 msgstr ""
 "Изменение поведения обработки данных для совместимости со средой и так далее."
 
-#: src/Admin/Apps/MainUpdate.php:251
+#: src/Admin/Conns/MainUpdate.php:277
 msgid "Maximum size of accepted requests"
 msgstr "Максимальный размер принимаемых запросов"
 
-#: src/Admin/Apps/MainUpdate.php:256
+#: src/Admin/Conns/MainUpdate.php:282
 msgid ""
 "Enter the maximum size of accepted requests from Megaplan at a time in "
 "bytes. May be specified with a dimension suffix, such as 7M, where M = "
 "megabyte, K = kilobyte, G - gigabyte."
 msgstr ""
+"Введите максимальный размер принимаемых запросов от Мегаплана за раз в "
+"байтах. Может быть указан с суффиксом размера, например 7M, где M = "
+"мегабайт, K = килобайт, G - гигабайт."
 
-#: src/Admin/Apps/MainUpdate.php:257 src/Admin/Apps/MainUpdate.php:273
+#: src/Admin/Conns/MainUpdate.php:283 src/Admin/Conns/MainUpdate.php:299
 msgid "Current WORDPLAN limit:"
-msgstr ""
+msgstr "Текущий лимит WORDPLAN:"
 
-#: src/Admin/Apps/MainUpdate.php:259
+#: src/Admin/Conns/MainUpdate.php:285
 msgid ""
 "Can only decrease the value, because it must not exceed the limits from the "
 "WORDPLAN settings."
 msgstr ""
+"Можно только уменьшить значение, т.к. оно не должно превышать лимиты из "
+"настроек WORDPLAN."
 
-#: src/Admin/Apps/MainUpdate.php:267 src/Admin/Settings/MainForm.php:152
+#: src/Admin/Conns/MainUpdate.php:293 src/Admin/Settings/MainForm.php:142
 msgid "Maximum time for execution PHP"
 msgstr "Максимальное время выполнения PHP скриптов"
 
-#: src/Admin/Apps/MainUpdate.php:272
+#: src/Admin/Conns/MainUpdate.php:298
 msgid ""
 "Value is seconds. Algorithms of current configuration will run until a time "
 "limit is end."
@@ -499,87 +536,103 @@ msgstr ""
 "Значение в секундах. Алгоритмы текущей конфигурации будут работать до тех "
 "пор, пока не истечет ограничение по времени."
 
-#: src/Admin/Apps/MainUpdate.php:275
+#: src/Admin/Conns/MainUpdate.php:301
 msgid ""
 "If specify 0, the time limit will be disabled. Specifying 0 is not "
 "recommended, it is recommended not to exceed the WORDPLAN limit."
 msgstr ""
+"Если указать 0, ограничение по времени будет отключено. Указывать 0 не "
+"рекомендуется, рекомендуется не превышать ограничение WORDPLAN."
 
-#: src/Admin/Apps/MainUpdate.php:299
+#: src/Admin/Conns/MainUpdate.php:325
 msgid "Debug is enabled!"
 msgstr "Отладка включена!"
 
-#: src/Admin/Apps/MainUpdate.php:301
+#: src/Admin/Conns/MainUpdate.php:327
 msgid ""
-"The current app has debug mode enabled. You must disable this mode after "
+"The current conn has debug mode enabled. You must disable this mode after "
 "debugging is complete."
 msgstr ""
+"Текущее соединение имеет включенный режим отладки. Вы должны отключить этот "
+"режим после завершения отладки."
 
-#: src/Admin/Apps/MainUpdate.php:310
+#: src/Admin/Conns/MainUpdate.php:336
 msgid "Info is enabled!"
 msgstr "Информация включена!"
 
-#: src/Admin/Apps/MainUpdate.php:312
+#: src/Admin/Conns/MainUpdate.php:338
 msgid ""
-"The extended information recording mode is enabled for the current app. It "
+"The extended information recording mode is enabled for the current conn. It "
 "is recommended to disable this mode after debugging is complete."
 msgstr ""
+"Для текущего подключения включен расширенный режим записи информации. "
+"Рекомендуется отключать этот режим после завершения отладки."
 
-#: src/Admin/Apps/Update.php:35 src/Admin/Settings.php:47
+#: src/Admin/Conns/Update.php:35 src/Admin/Settings.php:47
 msgid "Main"
 msgstr "Основное"
 
-#: src/Admin/Apps/Update.php:102
+#: src/Admin/Conns/Update.php:102
 msgid "Conn name"
-msgstr ""
+msgstr "Наименование подключения"
 
-#: src/Admin/Apps/Update.php:104
+#: src/Admin/Conns/Update.php:104
 msgid "Used for convenient distribution of multiple conns."
-msgstr ""
+msgstr "Используется для удобного распределения нескольких подключений."
 
-#: src/Admin/Apps/Update.php:107
+#: src/Admin/Conns/Update.php:107
 msgid "Rename"
 msgstr "Переименовать"
 
-#: src/Admin/Apps/Update.php:136
+#: src/Admin/Conns/Update.php:136
 msgid "Conn name update success."
-msgstr ""
+msgstr "Имя подключения успешно обновлено."
 
-#: src/Admin/Apps/Update.php:146
+#: src/Admin/Conns/Update.php:146
 msgid "Conn name update error. Please retry saving or change fields."
 msgstr ""
+"Ошибка обновления имени соединения. Повторите попытку сохранения или "
+"изменения полей."
 
-#: src/Admin/Apps/UpdateForm.php:44
-msgid "Check the box if you want to enable this app. Disabled by default."
+#: src/Admin/Conns/UpdateForm.php:44
+msgid "Check the box if you want to enable this conn. Disabled by default."
 msgstr ""
+"Установите флажок, если вы хотите включить это подключение. Отключено по "
+"умолчанию."
 
-#: src/Admin/Apps/UpdateForm.php:49
+#: src/Admin/Conns/UpdateForm.php:49
 msgid ""
-"The app is either enabled or disabled. In the off state, all app mechanisms "
-"will not work."
+"The conn is either enabled or disabled. In the off state, all conn "
+"mechanisms will not work."
 msgstr ""
+"Подключение либо включено, либо отключено. В выключенном состоянии все "
+"механизмы подключения не будут работать."
 
-#: src/Admin/Apps/UpdateForm.php:89 src/Admin/Forms/InlineForm.php:58
+#: src/Admin/Conns/UpdateForm.php:89 src/Admin/Forms/InlineForm.php:58
 msgid "Update error. Please retry."
 msgstr "Ошибка при обновлении. Пожалуйста повторите."
 
-#: src/Admin/Apps/UpdateForm.php:135
+#: src/Admin/Conns/UpdateForm.php:135
 msgid "Fast navigation"
 msgstr "Быстрая навигация"
 
-#: src/Admin/Apps/Verification.php:73
+#: src/Admin/Conns/Verification.php:73
 msgid ""
-"The app from Megaplan has been deleted. It is not possible to check the "
+"The conn from Megaplan has been deleted. It is not possible to check the "
 "relevance."
-msgstr ""
+msgstr "Подключение от Мегаплана удалено. Актуальность проверить невозможно."
 
-#: src/Admin/Apps/Verification.php:85
+#: src/Admin/Conns/Verification.php:85
 msgid "The following conns have been successfully verified and connected:"
-msgstr ""
+msgstr "Следующие соединения были успешно проверены и подключены:"
 
-#: src/Admin/Apps/Verification.php:111
+#: src/Admin/Conns/Verification.php:102
+msgid "Verify connection error. Test connection is not success."
+msgstr "Проверьте ошибку подключения. Тестовое соединение не удалось."
+
+#: src/Admin/Conns/Verification.php:112
 msgid "The following conns contain errors and have been disabled:"
-msgstr ""
+msgstr "Следующие соединения содержат ошибки и были отключены:"
 
 #: src/Admin/Extensions.php:40
 msgid "Installed"
@@ -607,7 +660,7 @@ msgstr "Интерфейс"
 
 #: src/Admin/Settings.php:75
 msgid "Connection to the WORDPLAN"
-msgstr ""
+msgstr "Подключение к WORDPLAN"
 
 #: src/Admin/Settings/ActivationForm.php:50 src/Admin/Settings/Form.php:75
 msgid "Save error. Please retry."
@@ -684,26 +737,28 @@ msgstr "Отключение успешно. Доступно повторное
 
 #: src/Admin/Settings/ConnectionForm.php:208
 msgid "Site is connected to WORDPLAN"
-msgstr ""
+msgstr "Сайт подключен к WORDPLAN"
 
 #: src/Admin/Settings/ConnectionForm.php:210
 msgid "To create a new connection, need to disconnect the current connection."
 msgstr "Для создания нового подключения, необходимо отключить текущее."
 
 #: src/Admin/Settings/ConnectionForm.php:217
-msgid "Connected login from the WC1C website."
-msgstr "Подключенный логин с сайта WC1C."
+msgid "Connected login from the WORDPLAN website."
+msgstr "Подключенный логин с сайта WORDPLAN."
 
 #: src/Admin/Settings/ConnectionForm.php:225
-msgid "Conn token"
+msgid "Application token"
 msgstr "Токен приложения"
 
 #: src/Admin/Settings/ConnectionForm.php:227
 msgid ""
 "The current application token for the user. This token can be revoked in "
-"your personal app on the WC1C website, as well as by clicking the Disconnect "
-"button."
+"your personal conn on the WORDPLAN website, as well as by clicking the "
+"Disconnect button."
 msgstr ""
+"Текущий токен приложения для пользователя. Этот токен можно отозвать в "
+"личном кабинете на сайте WORDPLAN, а также нажав кнопку Отключить."
 
 #: src/Admin/Settings/Form.php:130
 msgid "Save success."
@@ -735,38 +790,27 @@ msgstr ""
 "отдельных функций, пользователей и ролей. Если модификация отключена, "
 "функции будут отключены глобально для всех и всего."
 
-#: src/Admin/Settings/InterfaceForm.php:54
-msgid "Column in media library list"
-msgstr "Колонка в списке медиатеки"
-
-#: src/Admin/Settings/InterfaceForm.php:56
-msgid "Enable"
-msgstr "Включить"
-
-#: src/Admin/Settings/InterfaceForm.php:57
-msgid ""
-"Output of a column with information from Megaplan to the list of media files."
-msgstr ""
-
-#: src/Admin/Settings/LogsForm.php:41
+#: src/Admin/Settings/LogsForm.php:42
 msgid "Level for main events"
 msgstr "Уровень для основных событий"
 
-#: src/Admin/Settings/LogsForm.php:66
+#: src/Admin/Settings/LogsForm.php:67
 msgid "Levels by context"
 msgstr "Уровни по контексту"
 
-#: src/Admin/Settings/LogsForm.php:68
+#: src/Admin/Settings/LogsForm.php:69
 msgid "Event log settings based on context."
 msgstr "Настройки журнала событий исходя из контекста."
 
-#: src/Admin/Settings/LogsForm.php:75
+#: src/Admin/Settings/LogsForm.php:76
 msgid ""
-"All events of the selected level will be recorded the conns events in the log "
-"file. The higher the level, the less data is recorded."
+"All events of the selected level will be recorded the conns events in the "
+"log file. The higher the level, the less data is recorded."
 msgstr ""
+"Все события выбранного уровня будут записаны как события conns в лог-файл. "
+"Чем выше уровень, тем меньше данных записывается."
 
-#: src/Admin/Settings/LogsForm.php:92
+#: src/Admin/Settings/LogsForm.php:93
 msgid ""
 "All events of the selected level will be recorded the tools events in the "
 "log file. The higher the level, the less data is recorded."
@@ -775,39 +819,36 @@ msgstr ""
 "файл журнала. Чем выше уровень, тем меньше данных записывается."
 
 #: src/Admin/Settings/MainForm.php:43
-msgid "API MoySklad"
-msgstr "API Мой Склад"
+msgid "API Megaplan"
+msgstr "API Мегаплан"
 
 #: src/Admin/Settings/MainForm.php:45
 msgid "Used for API connections."
 msgstr "Используются для подключений по API."
 
 #: src/Admin/Settings/MainForm.php:50
-msgid "Host"
-msgstr "Хост"
+msgid "Default host"
+msgstr "Хост по умолчанию"
 
 #: src/Admin/Settings/MainForm.php:52
-msgid ""
-"This host is used for API connection. If the host is unknown, use the value: "
-"online.moysklad.ru"
+msgid "This host is used for API connection. Example: {hostname}.megaplan.ru"
 msgstr ""
-"Этот хост используется для подключения API. Если хост неизвестен, "
-"используйте значение: online.moysklad.ru"
+"Этот хост используется для подключения API. Пример: {hostname}.megaplan.ru"
 
 #: src/Admin/Settings/MainForm.php:59
 msgid "Force requests over HTTPS"
 msgstr "Принудительные запросы через HTTPS"
 
 #: src/Admin/Settings/MainForm.php:61
-msgid "Enable HTTPS enforcement for requests to the MoySklad API?"
-msgstr "Включить принудительное применение HTTPS для запросов к API Мой Склад?"
+msgid "Enable HTTPS enforcement for requests to the Megaplan API?"
+msgstr "Включить принудительное применение HTTPS для запросов к API Мегаплан?"
 
 #: src/Admin/Settings/MainForm.php:62
 msgid ""
-"If enabled, all API requests from the site to MoySklad will be made over the "
+"If enabled, all API requests from the site to Megaplan will be made over the "
 "secure HTTPS protocol."
 msgstr ""
-"Если этот параметр включен, все запросы API с сайта на Мой Склад будут "
+"Если этот параметр включен, все запросы API с сайта на Мегаплан будут "
 "выполняться по защищенному протоколу HTTPS."
 
 #: src/Admin/Settings/MainForm.php:68
@@ -824,73 +865,64 @@ msgstr ""
 
 #: src/Admin/Settings/MainForm.php:91
 msgid "Some settings for the conns."
-msgstr ""
+msgstr "Некоторые настройки для подключений."
 
 #: src/Admin/Settings/MainForm.php:96
-msgid "Test connection before add"
-msgstr "Проверить соединение перед добавлением"
-
-#: src/Admin/Settings/MainForm.php:98
-msgid "Enable data validation to connect to Megaplan before adding?"
-msgstr ""
-
-#: src/Admin/Settings/MainForm.php:99
-msgid ""
-"If enabled, then when connecting conns from Megaplan, they will be checked "
-"for validity by a test connection."
-msgstr ""
-
-#: src/Admin/Settings/MainForm.php:105
 msgid "Unique names"
 msgstr "Уникальные имена"
 
-#: src/Admin/Settings/MainForm.php:107
+#: src/Admin/Settings/MainForm.php:98
 msgid "Require unique names for conns?"
-msgstr ""
+msgstr "Требовать уникальные имена для подключения?"
 
-#: src/Admin/Settings/MainForm.php:108
+#: src/Admin/Settings/MainForm.php:99
 msgid "If enabled, will need to provide unique names for the conns."
 msgstr ""
+"Если включено, нужно будет предоставить уникальные имена для подключений."
 
-#: src/Admin/Settings/MainForm.php:114
+#: src/Admin/Settings/MainForm.php:105
 msgid "Number in the list"
 msgstr "Количество на одной странице"
 
-#: src/Admin/Settings/MainForm.php:116
+#: src/Admin/Settings/MainForm.php:107
 msgid "The number of displayed conns on one page."
-msgstr ""
+msgstr "Количество подключений на одной странице."
 
-#: src/Admin/Settings/MainForm.php:123
+#: src/Admin/Settings/MainForm.php:114
 msgid "Deleting drafts without trash"
 msgstr "Удаление черновиков без пометки на удаление"
 
-#: src/Admin/Settings/MainForm.php:125
+#: src/Admin/Settings/MainForm.php:116
 msgid "Enable deleting drafts without placing them in the trash?"
 msgstr "Разрешить удалять черновики, не помещая их в корзину?"
 
-#: src/Admin/Settings/MainForm.php:126
+#: src/Admin/Settings/MainForm.php:117
 msgid ""
-"If enabled, conns for connections in the draft status will be deleted without "
-"being added to the basket."
+"If enabled, conns for connections in the draft status will be deleted "
+"without being added to the basket."
 msgstr ""
+"Если включено, подключения в статусе черновик будут удаляться без добавления "
+"в корзину."
 
-#: src/Admin/Settings/MainForm.php:145
+#: src/Admin/Settings/MainForm.php:135
 msgid "Technical settings"
 msgstr "Технические настройки"
 
-#: src/Admin/Settings/MainForm.php:147
+#: src/Admin/Settings/MainForm.php:137
 msgid "Used to set up the environment."
 msgstr "Используется для настройки окружения."
 
-#: src/Admin/Settings/MainForm.php:157
+#: src/Admin/Settings/MainForm.php:147
 msgid "Value is seconds. wordplan will run until a time limit is set."
 msgstr ""
+"Значение в секундах. wordplan будет работать до тех пор, пока не будет "
+"установлено ограничение по времени."
 
-#: src/Admin/Settings/MainForm.php:158
+#: src/Admin/Settings/MainForm.php:148
 msgid "Server value:"
 msgstr "Значение сервера:"
 
-#: src/Admin/Settings/MainForm.php:160
+#: src/Admin/Settings/MainForm.php:150
 msgid ""
 "If specify 0, the time limit will be disabled. Specifying 0 is not "
 "recommended, it is recommended not to exceed the server limit."
@@ -898,11 +930,11 @@ msgstr ""
 "Если указать 0, ограничение по времени будет отключено. Указывать 0 не "
 "рекомендуется, рекомендуется не превышать лимит сервера."
 
-#: src/Admin/Settings/MainForm.php:168
+#: src/Admin/Settings/MainForm.php:158
 msgid "Maximum request size"
 msgstr "Максимальный размер запроса"
 
-#: src/Admin/Settings/MainForm.php:170
+#: src/Admin/Settings/MainForm.php:160
 msgid ""
 "The setting must not take a size larger than specified in the server "
 "settings."
@@ -1050,7 +1082,7 @@ msgstr "Ошибка: код активации в статусе заблоки
 msgid "Localization loaded."
 msgstr "Локализация загружена."
 
-#: src/Data/Storages/AppsStorage.php:64
+#: src/Data/Storages/ConnsStorage.php:59
 msgid "Could not insert into the database"
 msgstr "Не удалось вставить в базу данных"
 
@@ -1099,7 +1131,7 @@ msgstr "да"
 #: src/Tools/Environments/Init.php:116 src/Traits/DatetimeUtilityTrait.php:114
 #: vendor/digiom/woplucore/src/Traits/DatetimeUtilityTrait.php:118
 msgid "not"
-msgstr ""
+msgstr "нет"
 
 #: src/Tools/Environments/Init.php:140
 msgid "WordPress environment"
@@ -1107,7 +1139,7 @@ msgstr "Окружение WordPress"
 
 #: src/Tools/Environments/Init.php:154
 msgid "WORDPLAN environment"
-msgstr ""
+msgstr "Окружение WORDPLAN"
 
 #: src/Tools/Environments/Init.php:173
 msgid "WooCommerce environment"
@@ -1211,7 +1243,7 @@ msgstr "PHP mbstring enabled"
 
 #: src/Tools/Environments/Init.php:494
 msgid "WORDPLAN version"
-msgstr ""
+msgstr "Версия WORDPLAN"
 
 #: src/Tools/Environments/Init.php:504
 msgid "Upload directory"
@@ -1241,66 +1273,65 @@ msgstr "Валюта WooCommerce"
 msgid "WooCommerce currency symbol"
 msgstr "Символ валюты WooCommerce"
 
-#: src/Traits/AccountsUtilityTrait.php:41
-#: src/Traits/AccountsUtilityTrait.php:77
-#: src/Traits/AccountsUtilityTrait.php:109
+#: src/Traits/ConnsUtilityTrait.php:41 src/Traits/ConnsUtilityTrait.php:77
+#: src/Traits/ConnsUtilityTrait.php:109
 msgid "Undefined"
 msgstr "Неизвестно"
 
-#: src/Traits/AccountsUtilityTrait.php:47
+#: src/Traits/ConnsUtilityTrait.php:47
 msgid "Draft"
 msgstr "Черновик"
 
-#: src/Traits/AccountsUtilityTrait.php:48
+#: src/Traits/ConnsUtilityTrait.php:48
 msgid "Active"
 msgstr "Активна"
 
-#: src/Traits/AccountsUtilityTrait.php:49
+#: src/Traits/ConnsUtilityTrait.php:49
 msgid "Inactive"
 msgstr "Не активна"
 
-#: src/Traits/AccountsUtilityTrait.php:50 views/accounts/dashboard_error.php:9
-#: views/accounts/update_error.php:9
+#: src/Traits/ConnsUtilityTrait.php:50 views/conns/dashboard_error.php:9
+#: views/conns/update_error.php:9
 msgid "Error"
 msgstr "Ошибка"
 
-#: src/Traits/AccountsUtilityTrait.php:51
+#: src/Traits/ConnsUtilityTrait.php:51
 msgid "Processing"
 msgstr "В процессе"
 
-#: src/Traits/AccountsUtilityTrait.php:52
+#: src/Traits/ConnsUtilityTrait.php:52
 msgid "Deleted"
 msgstr "Удалена"
 
-#: src/Traits/AccountsUtilityTrait.php:83
-msgid "by Token"
-msgstr "по Токену"
+#: src/Traits/ConnsUtilityTrait.php:83
+msgid "by User"
+msgstr "по Пользователю"
 
-#: src/Traits/AccountsUtilityTrait.php:84
-msgid "by Login & Password"
-msgstr "по Логину и Паролю"
+#: src/Traits/ConnsUtilityTrait.php:84
+msgid "by Application"
+msgstr "по Приложению"
 
-#: src/Traits/AccountsUtilityTrait.php:115
+#: src/Traits/ConnsUtilityTrait.php:115
 msgid "Drafts"
 msgstr "Черновики"
 
-#: src/Traits/AccountsUtilityTrait.php:116
+#: src/Traits/ConnsUtilityTrait.php:116
 msgid "Activated"
 msgstr "Включены"
 
-#: src/Traits/AccountsUtilityTrait.php:117
+#: src/Traits/ConnsUtilityTrait.php:117
 msgid "Deactivated"
 msgstr "Отключены"
 
-#: src/Traits/AccountsUtilityTrait.php:118
+#: src/Traits/ConnsUtilityTrait.php:118
 msgid "With errors"
 msgstr "С ошибками"
 
-#: src/Traits/AccountsUtilityTrait.php:119
+#: src/Traits/ConnsUtilityTrait.php:119
 msgid "In processing"
-msgstr ""
+msgstr "В процессе"
 
-#: src/Traits/AccountsUtilityTrait.php:120
+#: src/Traits/ConnsUtilityTrait.php:120
 msgid "Trash"
 msgstr "Удаленные"
 
@@ -1312,7 +1343,7 @@ msgstr "%s <span class=\"time\">в: %s</span>"
 
 #: vendor/digiom/woplucore/src/Abstracts/FormAbstract.php:818
 msgid "Select all"
-msgstr ""
+msgstr "Выбрать все"
 
 #: vendor/digiom/woplucore/src/Abstracts/FormAbstract.php:818
 msgid "Select none"
@@ -1398,58 +1429,6 @@ msgstr "Выбрать Все"
 msgid "Close"
 msgstr "Закрыть"
 
-#: views/accounts/dashboard_error.php:3 views/accounts/update_error.php:3
-msgid "Back to conns list"
-msgstr ""
-
-#: views/accounts/dashboard_error.php:11 views/accounts/update_error.php:11
-msgid "Update is not available. Conn not found or unavailable."
-msgstr ""
-
-#: views/accounts/delete.php:5
-msgid "ID of the account to be deleted:"
-msgstr "ID удаляемой учетной записи:"
-
-#: views/accounts/delete.php:9
-msgid "Name of the account to be deleted:"
-msgstr "Имя удаляемой учетной записи:"
-
-#: views/accounts/delete.php:13
-msgid "Path of the account directory to be deleted:"
-msgstr "Путь к удаляемому каталогу аккаунта:"
-
-#: views/accounts/delete_error.php:3
-msgid "Error. Delete is not available"
-msgstr "Ошибка. Удаление недоступно"
-
-#: views/accounts/delete_form.php:16
-msgid "Delete"
-msgstr "Удалить"
-
-#: views/accounts/empty.php:9
-msgid "Conns by query is not found, query:"
-msgstr ""
-
-#: views/accounts/empty.php:13
-msgid "Conns not found."
-msgstr ""
-
-#: views/accounts/empty.php:19
-msgid "To continue working, you must add at least one account from Megaplan."
-msgstr ""
-
-#: views/accounts/error.php:3
-msgid "Error. Page for conns not found."
-msgstr ""
-
-#: views/accounts/sections.php:16
-msgid "Description is not exists."
-msgstr "Описание не существует."
-
-#: views/accounts/update_form.php:16
-msgid "Save account"
-msgstr "Сохранить учетную запись"
-
 #: views/activation/form.php:31
 msgid "Get code"
 msgstr "Получить код"
@@ -1460,20 +1439,22 @@ msgstr "Код можно получить на сайте плагина."
 
 #: views/activation/form.php:34
 msgid "Site:"
-msgstr ""
+msgstr "Сайт:"
 
 #: views/add/form.php:25
-msgid "Enter a name for the new account and click the add account button."
+msgid ""
+"Enter a name for the new conn, fill all fields and click the add conn button."
 msgstr ""
-"Введите имя новой учетной записи и нажмите кнопку добавления учетной записи."
+"Введите имя для нового подключения, заполните все поля и нажмите кнопку "
+"добавления подключения."
 
 #: views/add/form.php:29
-msgid "Add account"
-msgstr "Добавить учетную запись"
+msgid "Add conn"
+msgstr "Добавить подключение"
 
 #: views/connection/form.php:21
 msgid "Connect by WORDPLAN site"
-msgstr ""
+msgstr "Подключиться через сайт WORDPLAN"
 
 #: views/connection/form.php:24
 msgid "Disconnect"
@@ -1496,6 +1477,62 @@ msgid ""
 "Authorization of an external app occurs by going to the official WORDPLAN "
 "and returning to the current site."
 msgstr ""
+"Авторизация внешнего приложения происходит путем перехода на официальный "
+"WORDPLAN и возврата на текущий сайт."
+
+#: views/conns/dashboard_error.php:3 views/conns/update_error.php:3
+msgid "Back to conns list"
+msgstr "Вернуться к списку подключений"
+
+#: views/conns/dashboard_error.php:11 views/conns/update_error.php:11
+msgid "Update is not available. Conn not found or unavailable."
+msgstr "Обновление недоступно. Соединение не найдено или недоступно."
+
+#: views/conns/delete.php:5
+msgid "ID of the conn to be deleted:"
+msgstr "ID удаляемого подключения:"
+
+#: views/conns/delete.php:9
+msgid "Name of the conn to be deleted:"
+msgstr "Имя удаляемого подключения:"
+
+#: views/conns/delete.php:13
+msgid "Path of the conn directory to be deleted:"
+msgstr "Путь к удаляемому каталогу подключения:"
+
+#: views/conns/delete_error.php:3
+msgid "Error. Delete is not available"
+msgstr "Ошибка. Удаление недоступно"
+
+#: views/conns/delete_form.php:16
+msgid "Delete"
+msgstr "Удалить"
+
+#: views/conns/empty.php:9
+msgid "Conns by query is not found, query:"
+msgstr "Подключения по запросу не найдены, запрос:"
+
+#: views/conns/empty.php:13
+msgid "Conns not found."
+msgstr "Подключения не найдены."
+
+#: views/conns/empty.php:19
+msgid "To continue working, you must add at least one conn from Megaplan."
+msgstr ""
+"Для продолжения работы необходимо добавить хотя бы одно подключение от "
+"Мегаплан."
+
+#: views/conns/error.php:3
+msgid "Error. Page for conns not found."
+msgstr "Ошибка. Страница для подключений не найдена."
+
+#: views/conns/sections.php:16
+msgid "Description is not exists."
+msgstr "Описание не существует."
+
+#: views/conns/update_form.php:16
+msgid "Save conn"
+msgstr "Сохранить подключение"
 
 #: views/error.php:3
 msgid "Error. Page not found."
@@ -1533,7 +1570,7 @@ msgstr "Версия:"
 
 #: views/extensions/item.php:30
 msgid "Versions WORDPLAN:"
-msgstr ""
+msgstr "Версии WORDPLAN:"
 
 #: views/extensions/item.php:31
 msgid "from"
@@ -1541,7 +1578,7 @@ msgstr "от"
 
 #: views/extensions/item.php:35
 msgid "to"
-msgstr ""
+msgstr "до"
 
 #: views/helps/bugs.php:6
 msgid ""
@@ -1567,13 +1604,15 @@ msgstr "Перед сообщением об ошибке необходимо �
 msgid ""
 "Whether the settings for WordPress, WORDPLAN and their extensions are "
 "correct."
-msgstr ""
+msgstr "Верны ли настройки для WordPress, WORDPLAN и их расширений."
 
 #: views/helps/bugs.php:15
 msgid ""
 "Whether compatible versions of WordPress, WORDPLAN and their extensions are "
 "used. Compatibility can be found in the Environments section."
 msgstr ""
+"Используются ли совместимые версии WordPress, WORDPLAN и их расширения. "
+"Совместимость можно найти в разделе Environments."
 
 #: views/helps/bugs.php:19
 msgid ""
@@ -1617,13 +1656,13 @@ msgstr ""
 
 #: views/helps/features.php:15
 msgid "Is the required feature added in WORDPLAN updates."
-msgstr ""
+msgstr "Добавлена ли необходимая функция в обновлениях WORDPLAN."
 
 #: views/helps/features.php:16
 msgid ""
 "Whether the possibility is implemented by an additional extension to "
 "WORDPLAN."
-msgstr ""
+msgstr "Реализована ли возможность дополнительным расширением WORDPLAN."
 
 #: views/helps/features.php:17
 msgid "Whether the desired opportunity is waiting for its implementation."
@@ -1634,6 +1673,8 @@ msgid ""
 "If the feature is added in WORDPLAN updates, you just need to install the "
 "updated version."
 msgstr ""
+"Если функция добавлена в обновлениях WORDPLAN, вам просто нужно установить "
+"обновленную версию."
 
 #: views/helps/features.php:25
 msgid ""
@@ -1641,6 +1682,8 @@ msgid ""
 "feature should not be expected as part of WORDPLAN and you need to install "
 "the extension."
 msgstr ""
+"Но если функция реализована в расширении к WORDPLAN, то эту функцию не "
+"следует ожидать как часть WORDPLAN, и вам необходимо установить расширение."
 
 #: views/helps/features.php:26
 msgid ""
@@ -1659,6 +1702,8 @@ msgid ""
 "If no understand how Integration with Megaplan works, how to use and "
 "supplement it, can view the documentation."
 msgstr ""
+"Если не понимаете, как работает Интеграция с Мегапланом, как его "
+"использовать и дополнять, можете просмотреть документацию."
 
 #: views/helps/main.php:8
 msgid ""
@@ -1785,3 +1830,61 @@ msgstr "Команда WordPlan"
 #. Author URI of the plugin/theme
 msgid "https://wordplan.ru"
 msgstr "https://wordplan.ru"
+
+#~ msgid "Connect by Login & Password"
+#~ msgstr "Подключение по Логину и Паролю"
+
+#~ msgid "Connect by Token"
+#~ msgstr "Подключение по Токену"
+
+#~ msgid "Token"
+#~ msgstr "Токен"
+
+#~ msgid "Conn token"
+#~ msgstr "Токен приложения"
+
+#~ msgid "Column in media library list"
+#~ msgstr "Колонка в списке медиатеки"
+
+#~ msgid "Enable"
+#~ msgstr "Включить"
+
+#~ msgid "API MoySklad"
+#~ msgstr "API Мой Склад"
+
+#~ msgid "Test connection before add"
+#~ msgstr "Проверить соединение перед добавлением"
+
+#~ msgid "Uuid"
+#~ msgstr "Uuid"
+
+#~ msgid ""
+#~ "The token can be generated in MoySklad. After generating it, you must "
+#~ "enter it and click on the button for connection."
+#~ msgstr ""
+#~ "Токен можно сгенерировать в МойСклад. После его создания необходимо "
+#~ "ввести его и нажать кнопку подключения."
+
+#~ msgid "Test"
+#~ msgstr "Тест"
+
+#~ msgid "Test connection before adding?"
+#~ msgstr "Проверить соединение перед добавлением?"
+
+#~ msgid "Add account"
+#~ msgstr "Добавить учетную запись"
+
+#~ msgid "by Token"
+#~ msgstr "по Токену"
+
+#~ msgid "by Login & Password"
+#~ msgstr "по Логину и Паролю"
+
+#~ msgid "By Login & Password"
+#~ msgstr "По Логину и Паролю"
+
+#~ msgid "By Token"
+#~ msgstr "По Токену"
+
+#~ msgid "edit app"
+#~ msgstr "редактировать приложение"
