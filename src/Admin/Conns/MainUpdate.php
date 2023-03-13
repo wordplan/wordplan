@@ -78,9 +78,17 @@ class MainUpdate
                     $conn->setStatus('inactive');
                 }
 
-				$conn->setMegaplanLogin($data['login']);
-				$conn->setMegaplanPassword($data['password']);
-				$conn->setMegaplanToken($data['token']);
+				if($conn->isConnType('user'))
+				{
+					$conn->setMegaplanLogin($data['login']);
+					$conn->setMegaplanPassword($data['password']);
+					$conn->setMegaplanToken($data['token']);
+				}
+				else
+				{
+					$conn->setMegaplanApp($data['uuid']);
+					$conn->setMegaplanAppToken($data['token']);
+				}
 
 				unset($data['status'], $data['login'], $data['password'], $data['token'], $data['uuid']);
 
