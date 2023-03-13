@@ -194,7 +194,7 @@ class MainUpdate
 			'description' => __('Login in Megaplan. After adding an conn, changing the login is not possible.', 'wordplan'),
 			'default' => '',
 			'css' => 'min-width: 350px;',
-			'class' => 'disabled',
+			'custom_attributes' => ['autocomplete' => 'off']
 		];
 
 		$fields['password'] =
@@ -203,7 +203,8 @@ class MainUpdate
 			'type' => 'password',
 			'description' => __('Password for the specified user Megaplan.', 'wordplan'),
 			'default' => '',
-			'css' => 'min-width: 350px;'
+			'css' => 'min-width: 350px;',
+			'custom_attributes' => ['autocomplete' => 'new-password']
 		];
 
 		$fields['token'] =
