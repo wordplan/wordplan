@@ -49,7 +49,7 @@ class Dashboard
 
 		$conn_id = wordplan()->getVar($_GET['conn_id'], 0);
 
-		if(false === $this->setAccount($conn_id))
+		if(false === $this->setConn($conn_id))
 		{
 			$this->process();
 		}
@@ -92,7 +92,7 @@ class Dashboard
 			if(is_callable($callback, false, $callback_name))
 			{
 				$callback_obj = $callback_name();
-				$callback_obj->setAccount($this->getAccount());
+				$callback_obj->setAccount($this->getConn());
 				$callback_obj->process();
 			}
 		}
@@ -108,7 +108,7 @@ class Dashboard
 
 	public function headerItem()
 	{
-		$conn = $this->getAccount();
+		$conn = $this->getConn();
 		echo wp_kses_post(' > ' . $conn->getName());
 	}
 
@@ -174,7 +174,7 @@ class Dashboard
 	 */
 	public function outputSidebar()
 	{
-		$conn = $this->getAccount();
+		$conn = $this->getConn();
 
 		$args =
 		[
